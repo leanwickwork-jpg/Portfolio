@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@variant dark (.never-dark-mode);
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #111827;
+  --color-brand-accent: #3b82f6;
+  
+  --animate-fade-in: fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-slide-up: slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Base resets & custom scrollbar styles */
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  color: #111827;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+/* Professional Polish Panel Style */
+.glass-panel {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05); /* Softest shadow */
+}
+
+/* Custom grid decorations */
+.grid-bg {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(17, 24, 39, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.02) 1px, transparent 1px);
+}
+
+/* Figma-style technical dot grid */
+.decorative-grid-dots {
+  background-image: radial-gradient(rgba(59, 130, 246, 0.07) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+}
+
+/* Beautiful radial gradient background blobs representing creative energy flow */
+.decorative-blob-blue {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.09) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.decorative-blob-emerald {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.decorative-blob-purple {
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+/* Refined tech modern border accent line */
+.tech-dashed-line {
+  background-image: linear-gradient(to right, rgba(229, 231, 235, 1) 50%, transparent 50%);
+  background-size: 12px 1px;
+}
+
+/* Border styles */
+.border-polish {
+  border-color: rgba(229, 231, 235, 1);
+}
+
+/* Accent Glow and Subtle Gradients */
+.bg-subtle-light {
+  background-color: #F9FAFB;
+}
+
+/* Text glow */
+.text-glow-blue {
+  text-shadow: 0 0 12px rgba(59, 130, 246, 0.1);
+}
+
+
