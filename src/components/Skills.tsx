@@ -41,9 +41,15 @@ export default function Skills({ lang }: SkillsProps) {
   return (
     <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="absolute bottom-10 left-10 w-48 h-48 bg-blue-500/5 blur-3xl pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <span className="text-xs font-semibold tracking-wider text-blue-600 dark:text-blue-400 uppercase inline-block mb-3 px-3 py-1 bg-blue-500/10 rounded-full">
             {t.badge}
           </span>
@@ -54,10 +60,16 @@ export default function Skills({ lang }: SkillsProps) {
             {t.desc}
           </p>
           <div className="w-12 h-1 bg-blue-600 rounded-full mx-auto mt-4" />
-        </div>
+        </motion.div>
 
         {/* Tab Controls */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="flex flex-wrap justify-center gap-2 mb-12"
+        >
           {categories.map((cat) => (
             <button
               key={cat}
@@ -72,7 +84,7 @@ export default function Skills({ lang }: SkillsProps) {
               {categoryTranslations[cat]}
             </button>
           ))}
-        </div>
+        </motion.div>
 
         {/* Skills Grid */}
         <motion.div 

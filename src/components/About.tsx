@@ -1,6 +1,35 @@
-import { motion } from 'motion/react';
+import { useRef, useEffect, useState } from 'react';
+import { motion, useInView, animate } from 'motion/react';
 import { Target, Compass, Sparkles, User, GraduationCap, MapPin, CalendarDays, Award, TrendingUp, Zap, Users } from 'lucide-react';
 import { aboutTranslations, achievementsDataVi, achievementsDataEn } from '../translations';
+
+/* ─── Animated counter that fires once when scrolled into view ─────────────── */
+function AnimatedMetric({ value }: { value: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: '-40px' });
+  const [display, setDisplay] = useState(value);
+
+  useEffect(() => {
+    if (!isInView) return;
+    // Extract leading non-digit prefix, number, and trailing suffix
+    const match = value.match(/^(\D*)(\d[\d,.]*)(.*)$/);
+    if (!match) return;
+    const [, prefix, numStr, suffix] = match;
+    const target = parseFloat(numStr.replace(/,/g, ''));
+    if (isNaN(target)) return;
+    const controls = animate(0, target, {
+      duration: 1.6,
+      ease: [0.16, 1, 0.3, 1],
+      onUpdate: (v) => {
+        const rounded = target >= 100 ? Math.round(v) : Math.round(v * 10) / 10;
+        setDisplay(`${prefix}${rounded}${suffix}`);
+      },
+    });
+    return () => controls.stop();
+  }, [isInView, value]);
+
+  return <span ref={ref}>{display}</span>;
+}
 
 const getAchievementIcon = (iconName: string) => {
   switch (iconName) {
@@ -188,7 +217,7 @@ export default function About({ lang }: AboutProps) {
                   </div>
                   
                   <p className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight mb-1.5 group-hover:text-blue-600 duration-300 font-mono">
-                    {ach.metric}
+                    <AnimatedMetric value={ach.metric} />
                   </p>
                   
                   <h4 className="text-sm font-bold text-neutral-800 leading-snug mb-2 group-hover:text-neutral-900 duration-200">

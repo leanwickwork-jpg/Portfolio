@@ -135,4 +135,5 @@ export interface MarketingCase {
   frameworks: string[];
   detailSlug?: string;
   detail?: MarketingCaseDetailData;
+  pdfUrl?: string;   // optional PDF download/preview
 }

@@ -34,7 +34,13 @@ export default function Contact({ onOpenCvModal, lang }: ContactProps) {
       <div className="absolute bottom-0 right-1/10 w-64 h-64 bg-emerald-500/5 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <span className="text-xs font-semibold tracking-wider text-blue-600 dark:text-blue-400 uppercase inline-block mb-3 px-3 py-1 bg-blue-500/10 rounded-full">
             {t.badge}
           </span>
@@ -45,11 +51,17 @@ export default function Contact({ onOpenCvModal, lang }: ContactProps) {
             {t.desc}
           </p>
           <div className="w-12 h-1 bg-blue-600 rounded-full mx-auto mt-4" />
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch max-w-6xl mx-auto">
           {/* Contact Details Card */}
-          <div className="lg:col-span-4 flex flex-col justify-between glass-panel p-8 rounded-3xl relative overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, x: -24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-4 flex flex-col justify-between glass-panel p-8 rounded-3xl relative overflow-hidden"
+          >
             {/* Visual shine in background */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-bl-full pointer-events-none" />
 
@@ -128,10 +140,16 @@ export default function Contact({ onOpenCvModal, lang }: ContactProps) {
                 {t.cvBoxBtn}
               </button>
             </div>
-          </div>
+          </motion.div>
 
           {/* Form Card */}
-          <div className="lg:col-span-8 glass-panel p-8 sm:p-10 rounded-3xl relative flex flex-col justify-between">
+          <motion.div
+            initial={{ opacity: 0, x: 24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="lg:col-span-8 glass-panel p-8 sm:p-10 rounded-3xl relative flex flex-col justify-between"
+          >
             <AnimatePresence mode="wait">
               {!isSubmitted ? (
                 <motion.form 
@@ -238,7 +256,7 @@ export default function Contact({ onOpenCvModal, lang }: ContactProps) {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

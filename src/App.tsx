@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sparkles, Mail, Phone, Moon, Sun, ArrowUpRight, Award, FolderHeart, Laptop, PhoneCall, HelpCircle, Briefcase, FileBadge, CodeSquare, ChevronUp, Globe } from 'lucide-react';
+import { Sparkles, Mail, Phone, Moon, Sun, ArrowUpRight, Award, FolderHeart, Laptop, PhoneCall, HelpCircle, Briefcase, FileBadge, CodeSquare, ChevronUp, Globe, Home, BookOpen } from 'lucide-react';
 
 // Components
 import Hero from './components/Hero';
@@ -26,6 +26,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<string>('hero');
   const [scrollProgress, setScrollProgress] = useState<number>(0);
   const [currentRoute, setCurrentRoute] = useState<string>(() => window.location.pathname);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
     const handleLocationChange = () => {
@@ -42,16 +43,21 @@ export default function App() {
     };
   }, []);
 
+  // Dark mode effect
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
+
   const handleBackToHome = () => {
     window.history.pushState({}, '', '/');
     window.dispatchEvent(new Event('pushstate-changed'));
   };
 
   useEffect(() => {
-    // Force light mode globally
-    document.documentElement.classList.remove('dark');
-    localStorage.removeItem('theme');
-
     const handleScroll = () => {
       // Calculate scroll progress percentage
       const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -106,6 +112,13 @@ export default function App() {
   };
 
   const navItems = navTranslations[lang];
+
+  // Route detection — lifted here so mobile bottom nav can use them
+  const isNdsv = currentRoute.toLowerCase().includes('netdepsinhvien');
+  const isEmis = currentRoute.toLowerCase().includes('tiktokemi');
+  const caseStudyMatch = currentRoute.match(/\/case-study\/([^/]+)/i);
+  const activeCaseSlug = caseStudyMatch ? caseStudyMatch[1] : null;
+  const isDetailPage = isNdsv || isEmis || !!activeCaseSlug;
 
   return (
     <div className="min-h-screen bg-white text-neutral-900 transition-colors duration-300 relative">
@@ -163,19 +176,35 @@ export default function App() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all duration-200 ${
-                  activeTab === item.id 
-                    ? 'bg-white dark:bg-neutral-800 text-blue-600 dark:text-blue-400 shadow-xs scale-102 font-bold'
+                className={`relative px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-colors duration-200 ${
+                  activeTab === item.id
+                    ? 'text-blue-600 dark:text-blue-400 font-bold'
                     : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200'
                 }`}
               >
-                {item.label}
+                {activeTab === item.id && (
+                  <motion.span
+                    layoutId="nav-pill"
+                    className="absolute inset-0 bg-white dark:bg-neutral-800 rounded-lg shadow-xs"
+                    transition={{ type: 'spring', stiffness: 420, damping: 38 }}
+                  />
+                )}
+                <span className="relative z-10">{item.label}</span>
               </button>
             ))}
           </nav>
 
           {/* Side Controls (Download CV actions + Language switches) */}
           <div className="flex items-center gap-2 sm:gap-3">
+            {/* Dark Mode Toggle */}
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="p-2.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 border border-neutral-220 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 duration-200 shadow-xs"
+              aria-label={darkMode ? 'Chuyển chế độ sáng' : 'Chuyển chế độ tối'}
+            >
+              {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
+
             {/* Language Switch Button */}
             <div className="flex items-center bg-neutral-100 p-0.5 rounded-xl border border-neutral-220/70 shadow-xs">
               <button
@@ -229,40 +258,14 @@ export default function App() {
 
       {/* CORE SECTIONS */}
       <main className="relative z-10">
-        {(() => {
-          const isNdsv = currentRoute.toLowerCase().includes('netdepsinhvien');
-          const isEmis = currentRoute.toLowerCase().includes('tiktokemi');
-
-          const caseStudyMatch = currentRoute.match(/\/case-study\/([^/]+)/i);
-          const activeCaseSlug = caseStudyMatch ? caseStudyMatch[1] : null;
-
-          if (isNdsv) {
-            return (
-              <ProjectDetail
-                projectId="project-ndsv"
-                lang={lang}
-                onBack={handleBackToHome}
-              />
-            );
-          } else if (isEmis) {
-            return (
-              <ProjectDetail
-                projectId="project-emis"
-                lang={lang}
-                onBack={handleBackToHome}
-              />
-            );
-          } else if (activeCaseSlug) {
-            return (
-              <CaseDetail
-                caseSlug={activeCaseSlug}
-                lang={lang}
-                onBack={handleBackToHome}
-              />
-            );
-          } else {
-            return (
-              <>
+        {isNdsv ? (
+          <ProjectDetail projectId="project-ndsv" lang={lang} onBack={handleBackToHome} />
+        ) : isEmis ? (
+          <ProjectDetail projectId="project-emis" lang={lang} onBack={handleBackToHome} />
+        ) : activeCaseSlug ? (
+          <CaseDetail caseSlug={activeCaseSlug} lang={lang} onBack={handleBackToHome} />
+        ) : (
+          <>
                 {/* 1. Hero Section */}
                 <Hero 
                   lang={lang}
@@ -293,14 +296,12 @@ export default function App() {
 
                 {/* 9. Contact Section */}
                 <Contact lang={lang} onOpenCvModal={() => setShowCvModal(true)} />
-              </>
-            );
-          }
-        })()}
+          </>
+        )}
       </main>
 
       {/* PORTFOLIO FOOTER */}
-      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-neutral-200 dark:border-neutral-900/60 bg-neutral-50 dark:bg-[#080b13] relative overflow-hidden print:hidden">
+      <footer className="py-12 pb-24 lg:pb-12 px-4 sm:px-6 lg:px-8 border-t border-neutral-200 dark:border-neutral-900/60 bg-neutral-50 dark:bg-[#080b13] relative overflow-hidden print:hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
           
           <div className="text-center md:text-left">
@@ -346,13 +347,50 @@ export default function App() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="fixed bottom-6 right-6 z-30 p-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-500/20 cursor-pointer duration-200 border border-blue-500/10 hover:translate-y-[-2px] focus:outline-none print:hidden"
+            className="fixed bottom-20 lg:bottom-6 right-6 z-30 p-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-500/20 cursor-pointer duration-200 border border-blue-500/10 hover:translate-y-[-2px] focus:outline-none print:hidden"
             aria-label="Cuộn lên đầu trang"
           >
             <ChevronUp className="w-5 h-5" />
           </motion.button>
         )}
       </AnimatePresence>
+
+      {/* MOBILE BOTTOM NAVIGATION BAR */}
+      {!isDetailPage && (
+        <nav className="fixed bottom-0 inset-x-0 z-40 lg:hidden bg-white/95 dark:bg-neutral-950/95 backdrop-blur-xl border-t border-neutral-200 dark:border-neutral-800 px-2 py-1.5 flex items-center justify-around print:hidden">
+          {([
+            { id: 'hero', icon: Home, labelVi: 'Trang chủ', labelEn: 'Home' },
+            { id: 'projects', icon: FolderHeart, labelVi: 'Dự án', labelEn: 'Projects' },
+            { id: 'cases', icon: BookOpen, labelVi: 'Cases', labelEn: 'Cases' },
+            { id: 'certifications', icon: FileBadge, labelVi: 'Chứng chỉ', labelEn: 'Certs' },
+            { id: 'contact', icon: PhoneCall, labelVi: 'Liên hệ', labelEn: 'Contact' },
+          ] as const).map((item) => {
+            const IconComp = item.icon;
+            const isActive = activeTab === item.id;
+            return (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`relative flex flex-col items-center gap-0.5 px-3 py-2 rounded-xl transition-all duration-200 min-w-[52px] ${
+                  isActive ? 'text-blue-600 dark:text-blue-400' : 'text-neutral-400 dark:text-neutral-500'
+                }`}
+              >
+                {isActive && (
+                  <motion.span
+                    layoutId="bottom-nav-pill"
+                    className="absolute inset-0 bg-blue-50 dark:bg-blue-950/50 rounded-xl"
+                    transition={{ type: 'spring', stiffness: 420, damping: 38 }}
+                  />
+                )}
+                <IconComp className={`w-5 h-5 relative z-10 transition-transform duration-150 ${isActive ? 'scale-110' : ''}`} />
+                <span className="text-[9px] font-bold tracking-wide uppercase relative z-10">
+                  {lang === 'vi' ? item.labelVi : item.labelEn}
+                </span>
+              </button>
+            );
+          })}
+        </nav>
+      )}
 
     </div>
   );

@@ -789,60 +789,60 @@ const kfcDetailVi: MarketingCaseDetailData = {
   conclusion: 'Nếu campaign này thắng, KFC không được lặp lại nó vào mùa sau vì sẽ bị "trùng lặp code". Họ phải biến nó thành một "Hệ điều hành giọng nói" (Consistent Voice) trường kỳ trên mọi điểm chạm — không phải một chiến dịch, mà là một bản tính cách thương hiệu được lập trình sẵn.'
 };
 
-const dominosDetailVi: MarketingCaseDetailData = {
-  heroTitle: 'Case Study #03: Domino\'s Pizza — Khi Thú Nhận Sự Thật Trở Thành Chiến Lược Vực Dậy Thương Hiệu',
-  brand: "Domino's Pizza",
-  opponents: 'Pizza Hut, Little Caesars & thị trường pizza Mỹ',
-  industry: 'F&B — Pizza Chain (Mỹ)',
-  coreProblem: 'Khủng hoảng sản phẩm nghiêm trọng — vị bánh tệ như "bìa các-tông", mất niềm tin tiêu dùng diện rộng',
-  models: ['Radical Honesty', 'Brand Turnaround Matrix', 'Closed-Loop Feedback System', 'Pratfall Effect'],
-  hook: 'Cuối thập niên 2000, khách hàng Mỹ nói thẳng: pizza của Domino\'s tệ như bìa các-tông. Phần lớn thương hiệu sẽ đổ tiền vào quảng cáo để lấp liếm. Domino\'s làm điều ngược lại hoàn toàn — họ lấy chính những lời chỉ trích tàn nhẫn nhất, đưa lên sóng truyền hình quốc gia, và tuyên bố: "Chúng tôi nghe thấy. Chúng tôi đã sai. Và đây là cách chúng tôi sửa."',
-  contextInsight: 'Cuối thập niên 2000, hành vi tiêu dùng Mỹ dịch chuyển mạnh mẽ: khách hàng ngày càng khắt khe về sức khỏe, nguồn gốc nguyên liệu và chất lượng ẩm thực thực tế. Mô hình vận hành cũ của Domino\'s ưu tiên cực đoan tốc độ giao hàng (cam kết dưới 30 phút) dẫn đến hy sinh hoàn toàn trải nghiệm vị giác. Kết quả: khách hàng đồng loạt phản ứng, ví vỏ bánh với "bìa các-tông" và nước sốt với "ketchup công nghiệp".',
-  coreInsight: 'Khách hàng không chỉ cần nhận bánh nhanh — họ cần sản phẩm xứng đáng với tiền bỏ ra. Quan trọng hơn, họ kỳ vọng thương hiệu phải ngừng lấp liếm và đối thoại sòng phẳng về chất lượng. Khi Domino\'s dũng cảm thừa nhận thất bại và cam kết cải tiến minh bạch, sự hoài nghi biến thành tò mò muốn thử lại.',
-  kfcSolution: 'Domino\'s áp dụng "Ma trận Xoay chuyển Thương hiệu dựa trên Sự Chân Thành Cực Đoan" (Radical Honesty Brand Turnaround Matrix): thay vì đổ ngân sách quảng cáo lấp liếm, họ tái cấu trúc từ cốt lõi sản phẩm, công bố toàn bộ quy trình cải tiến một cách minh bạch, và mời chính những khách hàng đã chỉ trích nặng nhất đến chứng thực sản phẩm mới. Kết quả: doanh thu tăng vượt bậc ngay quý tiếp theo, cổ phiếu tăng phi mã.',
+const vinamilkDetailVi: MarketingCaseDetailData = {
+  heroTitle: 'Case Study #03: Vinamilk Rebranding — Khi Người Tiêu Dùng Trở Thành Đồng Tác Giả Của Thương Hiệu',
+  brand: 'Vinamilk',
+  opponents: 'TH True Milk, Dutch Lady, Nestlé Việt Nam',
+  industry: 'FMCG — Ngành Sữa (Việt Nam)',
+  coreProblem: 'Rebrand hình ảnh sau 50 năm gây hoang mang cộng đồng — nguy cơ phá vỡ sợi dây cảm xúc với thế hệ người dùng trung thành',
+  models: ['Psychology of Ownership', 'Co-creation Marketing', 'Inoculation Theory', 'Narrative Transport'],
+  hook: 'Năm 2023, Vinamilk công bố rebrand toàn diện nhận diện thương hiệu sau đúng 50 năm tồn tại. Phản ứng cộng đồng mạng lập tức chia hai cực: một nửa lo ngại mất đi ký ức tuổi thơ, một nửa tò mò. Thay vì giải thích đơn phương hay áp đặt từ trên xuống, Vinamilk làm điều chưa ai trong ngành sữa Việt Nam từng thực hiện — họ trao quyền cho người tiêu dùng trở thành đồng tác giả của cuộc chuyển mình lịch sử này.',
+  contextInsight: 'Hành vi tiêu dùng Việt Nam đang dịch chuyển mạnh: Millennials và Gen Z không chỉ mua sản phẩm — họ mua câu chuyện và ý nghĩa gắn liền. Vinamilk, với 50 năm lịch sử, sở hữu một tài sản vô giá: ký ức cảm xúc liên thế hệ. Nhưng rebrand thiếu chiến lược tâm lý học sẽ phá hủy chính tài sản đó. Nghiên cứu Belk (1988) về "Psychology of Ownership" chỉ ra rằng người tiêu dùng coi thương hiệu quen thuộc như một phần bản sắc cá nhân — bị thay đổi đột ngột, họ trải nghiệm cảm giác mất mát tâm lý thực sự.',
+  coreInsight: 'Người tiêu dùng trung thành không sợ thương hiệu thay đổi — họ sợ bị thay đổi mà không được giải thích. Khi Vinamilk biến người tiêu dùng từ "khán giả bị động" thành "đồng tác giả chủ động" của quá trình rebrand, sự kháng cự chuyển hóa thành tự hào sở hữu và cam kết bảo vệ thương hiệu.',
+  kfcSolution: 'Vinamilk triển khai chiến lược "Co-creation Ownership": kích hoạt làn sóng #VinamilkCuaToi trên mạng xã hội để người dùng tự kể câu chuyện kỷ niệm với thương hiệu; phát hành mini-documentary không kịch bản ghi lại hành trình sáng tạo rebrand thực tế; đỉnh điểm là bộ Limited Edition Packaging cá nhân hoá từ chính UGC của người dùng — biến ký ức cá nhân thành sản phẩm vật lý có thể chạm tay vào. Kết quả dự kiến: NPS +20đ, UGC 71K tuần cao điểm, Sentiment +107%.',
   competitorRows: [
-    { brand: 'Chiến lược PR Spin',               contentChoice: 'Đổ ngân sách quảng cáo lấp liếm khủng hoảng',  customerPsych: '"Lại nói hay nhưng vẫn như cũ thôi"',     systemResult: 'Lòng tin tiếp tục suy giảm',           isHighlight: false },
-    { brand: 'Silent Revamp (Âm thầm đổi mới)',   contentChoice: 'Cải tiến sản phẩm không thông báo',           customerPsych: '"Chẳng thấy khác biệt gì đâu"',          systemResult: 'Tái định vị thất bại',                 isHighlight: false },
-    { brand: 'Blame External (Đổ lỗi bên ngoài)', contentChoice: 'Đổ lỗi cho chuỗi cung ứng, thị trường',      customerPsych: '"Không chịu trách nhiệm gì cả"',          systemResult: 'Mất uy tín hoàn toàn',                 isHighlight: false },
-    { brand: "Domino's Pizza",                    contentChoice: 'Thú nhận lỗi, tái cấu trúc minh bạch',        customerPsych: '"Họ dũng cảm — tôi muốn thử lại"',        systemResult: 'Doanh thu + cổ phiếu tăng phi mã',    isHighlight: true  },
+    { brand: 'TH True Milk',  contentChoice: 'Tái định vị "sữa sạch" với bộ nhận diện mới',       customerPsych: '"Hợp lý — nhưng chưa chạm được trái tim"',    systemResult: 'Tăng nhận diện, trung tính cảm xúc',    isHighlight: false },
+    { brand: 'Dutch Lady',    contentChoice: 'Giữ visual ổn định, không rebrand',                  customerPsych: '"Quen thuộc, an toàn — nhưng thiếu câu chuyện"', systemResult: 'Giữ thị phần, mất dần Gen Z',           isHighlight: false },
+    { brand: 'Nestlé VN',     contentChoice: 'Rebrand logo đơn thuần, ít truyền thông',            customerPsych: '"Không biết họ đã đổi gì"',                  systemResult: 'Tác động nhận thức thấp',               isHighlight: false },
+    { brand: 'Vinamilk ★',    contentChoice: 'Co-creation #VinamilkCuaToi + Limited Edition UGC',  customerPsych: '"Đây là của tôi — tôi là một phần câu chuyện này"', systemResult: 'NPS +20đ, UGC 71K, Sentiment +107%', isHighlight: true  },
   ],
   frameworks: [
     {
-      id: 'pratfall',
-      name: 'Pratfall Effect (Hiệu ứng Sẩy Chân)',
-      concept: 'Nghiên cứu của Elliot Aronson (1966): khi một thương hiệu có năng lực cốt lõi dám dũng cảm tự nhận khuyết điểm chân thành, mức độ uy tín và lòng tin từ công chúng tăng gấp bội. Domino\'s không phải thương hiệu tệ — họ chỉ đang "cố tỏ ra hoàn hảo" quá lâu. Khi thừa nhận, họ leo lên đỉnh đồ thị Brand Affection.',
-      uiNote: 'Đồ thị cong: Trục X = Mức độ hoàn hảo (Bình thường → Cố tỏ ra hoàn hảo → Tự nhận khuyết điểm). Trục Y = Brand Affection. Đỉnh cong tại "Tự nhận khuyết điểm" (Domino\'s Pizza). Điểm thấp nhất tại "Cố tỏ ra hoàn hảo vô cảm".'
+      id: 'generic',
+      name: 'Psychology of Ownership (Belk, 1988)',
+      concept: 'Nghiên cứu của Russell Belk (1988) chứng minh người tiêu dùng coi các thương hiệu thân thuộc như phần mở rộng của bản sắc cá nhân (Extended Self). Khi Vinamilk thay đổi nhận diện thương hiệu đột ngột, người dùng trải nghiệm cảm giác mất mát bản sắc — không phải chỉ mất một cái logo. Chiến lược Co-creation biến quá trình rebrand thành cơ hội để người dùng tái khẳng định quyền sở hữu cảm xúc: "thương hiệu này vẫn là của tôi, tôi đã góp phần định hình nó."',
+      uiNote: 'Biểu đồ: Trục X = Mức độ tham gia của người dùng (Bị động → Được thông báo → Đồng tác giả). Trục Y = Cảm giác sở hữu thương hiệu. Đỉnh cong tại "Đồng tác giả" (chiến lược Vinamilk). Đáy tại "Bị thay đổi không được giải thích".'
     },
     {
       id: 'generic',
-      name: 'Radical Honesty Brand Turnaround Matrix',
-      concept: 'Tiến trình 5 bước: [Khủng hoảng Chất lượng] → [Chân thành cực đoan: thừa nhận công khai] → [Minh bạch năng lực lõi: công bố quy trình cải tiến] → [Kiểm thử diện hẹp với khách hàng cũ] → [Đo lường & Tái định vị]. Đây là mô hình đối nghịch hoàn toàn với "PR Spin" — không che giấu, không giải thích, không biện hộ. Chỉ có thực tế và cam kết.',
-      uiNote: 'Flow chart 5 bước tuyến tính: Khủng hoảng → Thú nhận → Minh bạch → Kiểm thử → Đo lường. Mỗi bước là cột mốc không thể đảo ngược trong cuộc cách mạng thương hiệu.'
+      name: 'Inoculation Theory (McGuire, 1961)',
+      concept: 'Lý thuyết Tiêm chủng của William McGuire (1961): tiêm cho người tiêu dùng "liều nhỏ kháng thể" — thừa nhận trước những lo ngại về rebrand và cung cấp luận điểm phản bác — giúp họ tự miễn nhiễm với các narrative tiêu cực từ đối thủ hoặc dư luận. Vinamilk áp dụng qua mini-documentary: chủ động phơi bày nỗi lo "mất đi cái cũ" trước, rồi dẫn dắt người xem trải nghiệm hành trình giữ gìn giá trị cốt lõi trong hình hài mới.',
+      uiNote: 'Flow: Lo ngại ban đầu → Thừa nhận công khai → Giải thích hành trình → Tái khẳng định bản sắc → Miễn nhiễm với narrative tiêu cực. Mỗi bước là một "liều kháng thể" tâm lý.'
     },
     {
       id: 'generic',
-      name: 'Closed-Loop Feedback System (Hệ thống Phản hồi Vòng lặp Kín)',
-      concept: 'Thay vì thu thập phản hồi một chiều, Domino\'s thiết lập vòng lặp khép kín: Khách hàng phàn nàn → Thương hiệu ghi nhận công khai → Sản phẩm được cải tiến → Khách hàng cũ được mời quay lại chứng thực → Phản hồi mới được thu thập. Mỗi vòng lặp tạo ra "Social Proof" cực kỳ chân thực, không thể làm giả.',
-      uiNote: 'Vòng tròn khép kín: Complaint → Acknowledge → Improve → Validate → Repeat. Không phải đường thẳng một chiều mà là hệ sinh thái feedback liên tục tự cải thiện.'
+      name: 'Narrative Transport & Co-creation Marketing',
+      concept: 'Narrative Transport (Green & Brock, 2000): khi người tiêu dùng đắm chìm vào một câu chuyện, họ giảm khả năng phản biện và tăng đồng thuận cảm xúc. #VinamilkCuaToi biến mỗi người dùng thành người kể chuyện — tự tạo ra narrative cá nhân về thương hiệu. Co-creation Marketing (Prahalad & Ramaswamy, 2004): giá trị thương hiệu được tạo ra cùng nhau, không phải áp đặt từ doanh nghiệp. Limited Edition Packaging là sản phẩm vật lý hóa nguyên lý này.',
+      uiNote: 'Vòng lặp co-creation: Người dùng chia sẻ ký ức → Thương hiệu lắng nghe & tích hợp → Sản phẩm phản chiếu ký ức đó → Người dùng tự hào sở hữu → Chia sẻ rộng hơn. Mỗi vòng khuếch đại reach hữu cơ.'
     }
   ],
   benchmark: {
-    title: 'Benchmark Lịch Sử: Avis — "We Try Harder" (1962)',
-    period: '1962',
-    story: 'Năm 1962, Avis — thương hiệu thuê xe đứng vị trí số 2 thị trường Mỹ — không cố che giấu thứ hạng thua kém. Thay vào đó, họ tuyên bố thẳng: "We\'re only number 2. We try harder." Chiến dịch tự thú nhận điểm yếu này ngay lập tức tạo làn sóng đồng cảm khổng lồ từ công chúng, giúp Avis tăng trưởng thị phần mạnh mẽ và biến "vị trí số 2" thành lợi thế cạnh tranh độc đáo mà vị trí số 1 không thể có.',
-    lesson: 'Bài học cho Domino\'s: Sự chân thành không phải dấu hiệu của yếu đuối — đó là cơ chế kiến tạo lòng tin mạnh mẽ nhất. Người tiêu dùng không đòi hỏi thương hiệu phải hoàn hảo — họ chỉ cần thương hiệu đủ dũng cảm để trung thực và đủ nghiêm túc để thay đổi.'
+    title: 'Benchmark Cảnh Báo: Gap Logo Controversy (2010) & Tropicana (2009)',
+    period: '2009 – 2010',
+    story: 'Năm 2010, Gap âm thầm thay đổi logo 20 năm tuổi mà không có bất kỳ chiến lược truyền thông nào. Cộng đồng phẫn nộ dữ dội — trong vòng 6 ngày, Gap phải khôi phục logo cũ. Trước đó năm 2009, Tropicana rebrand bao bì mà không giải thích lý do, dẫn đến doanh số giảm 20% chỉ trong 2 tháng. Cả hai thất bại đều có chung nguyên nhân: người tiêu dùng bị loại ra khỏi quyết định liên quan đến thứ họ coi là "của mình".',
+    lesson: 'Bài học cốt lõi cho Vinamilk: Rebrand không phải việc nội bộ của doanh nghiệp — đó là quyết định thuộc về cộng đồng người dùng. Thương hiệu mạnh không sở hữu người tiêu dùng; người tiêu dùng sở hữu thương hiệu. Chiến lược thành công phải biến người dùng từ "đối tượng bị tác động" thành "chủ thể tham gia định hình".'
   },
   kpis: [
-    { label: 'Net Promoter Score',      abbr: 'NPS', description: 'Định lượng mức độ khách hàng sẵn sàng chủ động giới thiệu Domino\'s cho người thân sau khi thử sản phẩm mới. KPI cốt lõi đo lường lòng trung thành hậu turnaround.' },
-    { label: 'Same-Store Sales Growth', abbr: 'SSG', description: 'Tỷ lệ tăng trưởng doanh số tại các điểm bán cũ — thước đo chứng minh hành vi tái mua hàng thực tế, không bị làm đẹp bởi việc mở cửa hàng mới.' },
-    { label: 'Sentiment Score',         abbr: 'SS',  description: 'Chỉ số cảm xúc thương hiệu chuyển dịch từ Tiêu cực ("bìa các-tông") → Tò mò → Tích cực. Thước đo trực tiếp của chiến dịch Radical Honesty.' }
+    { label: 'Net Promoter Score',  abbr: 'NPS', description: 'Mục tiêu tăng +20đ (từ 32 → 52) — đo lường tỷ lệ người dùng chủ động giới thiệu Vinamilk sau rebrand. KPI phản ánh chuyển dịch từ "chấp nhận thụ động" sang "ủng hộ chủ động" của chiến lược co-creation.' },
+    { label: 'UGC Volume',          abbr: 'UGC', description: 'Mục tiêu 50K+ chia sẻ trong 2 tuần đầu — thước đo sức lan tỏa hữu cơ của chiến dịch #VinamilkCuaToi. Kết quả thực tế dự kiến đạt đỉnh 71K lượt chia sẻ tại tuần 7 của chiến dịch.' },
+    { label: 'Sell-Through Rate',   abbr: 'STR', description: 'Mục tiêu 100% trong 30 ngày cho bộ Limited Edition Packaging — chỉ số thương mại hóa trực tiếp của chiến lược co-creation. Khi người dùng đồng tác giả, họ mua không phải vì sản phẩm mà vì sở hữu một phần câu chuyện của chính mình.' }
   ],
   playbook: [
-    { step: 1, title: 'Công khai Khuyết điểm (The Confession)',          description: 'Đưa các đoạn clip phản hồi tiêu cực của khách hàng thực tế lên sóng truyền hình quốc gia và kỹ thuật số. Không chỉnh sửa, không giảm nhẹ — để khách hàng nói thẳng những điều tệ nhất về sản phẩm. Sự tự nguyện phơi bày này tạo ra sự chú ý tuyệt đối từ dư luận.' },
-    { step: 2, title: 'Minh bạch hóa Cải tiến (The Open Source Labs)',   description: 'Công bố các thước phim thực tế tại phòng nghiên cứu, ghi lại quá trình đầu bếp đập đi xây lại toàn bộ công thức bánh — từ đế đến nước sốt. Chứng minh đây là cuộc cách mạng sản phẩm nghiêm túc, không phải chiêu truyền thông.' },
-    { step: 3, title: 'Kiểm thử & Chứng thực (The Market Validation)',   description: 'Mời trực tiếp những khách hàng từng chỉ trích nặng nề nhất đến trải nghiệm phiên bản bánh mới và ghi lại phản ứng khách quan. Biến "người phán xét" thành "nhân chứng bảo chứng" — đây là hình thức Social Proof chân thực nhất.' }
+    { step: 1, title: 'Phase 1 — Kích hoạt UGC #VinamilkCuaToi (Tuần 1–2)',       description: 'Phát động chiến dịch hashtag kêu gọi người dùng chia sẻ ký ức cá nhân với Vinamilk — từ ly sữa buổi sáng thời thơ ấu đến khoảnh khắc gia đình quây quần. Không script, không dàn dựng. Thương hiệu chỉ lắng nghe, tổng hợp và khuếch đại câu chuyện của người dùng. Mục tiêu: 50K+ lượt chia sẻ hữu cơ.' },
+    { step: 2, title: 'Phase 2 — Mini-Documentary Không Kịch Bản (Tuần 3–5)',      description: 'Phát hành series mini-documentary ghi lại hành trình thực tế của đội ngũ sáng tạo rebrand — những cuộc tranh luận nội bộ, quyết định khó khăn, và triết lý giữ gìn bản sắc trong hình hài mới. Áp dụng Inoculation Theory: thừa nhận trước nỗi lo "mất đi cái cũ", dẫn dắt người xem trải nghiệm hành trình bảo tồn giá trị cốt lõi.' },
+    { step: 3, title: 'Phase 3 — Limited Edition Packaging Cá Nhân Hoá (Tuần 6–8)', description: 'Ra mắt bộ packaging Limited Edition được thiết kế từ chính nội dung UGC của người dùng — hình ảnh, câu chuyện và kỷ niệm thực tế được in trực tiếp lên sản phẩm. Mỗi hộp sữa là một tác phẩm nghệ thuật cộng đồng. Mục tiêu: 100% sell-through trong 30 ngày. Đây là đỉnh cao của chiến lược Co-creation — biến ký ức thành sản phẩm vật lý.' }
   ],
-  conclusion: 'Khi hệ thống vận hành và trải nghiệm sản phẩm gặp lỗi cốt lõi, giải pháp tối ưu không phải là đổ ngân sách vào quảng cáo lấp liếm bề nổi. Cách duy nhất là tái cấu trúc tư duy quản trị, dũng cảm đối thoại công khai và đưa ra giải pháp sửa đổi triệt để. Domino\'s đã chứng minh: khi người dùng phát hiện lỗ hổng sản phẩm, cách duy nhất để giữ chân họ là sửa lỗi ngay lập tức — không phải giải thích rằng đó là "tính năng tiềm ẩn". Chân thành cực đoan không phải vũ khí của kẻ yếu — đó là chiến lược của người dẫn đầu thị trường.'
+  conclusion: 'Rebrand không phải cuộc chiến giữa cũ và mới — đó là cuộc đối thoại giữa thương hiệu và cộng đồng. Vinamilk chứng minh rằng khi người tiêu dùng được mời làm đồng tác giả, họ không chỉ chấp nhận sự thay đổi — họ trở thành người bảo vệ nhiệt thành nhất cho nó. "50 năm là của chúng ta — tương lai cũng vậy" không phải tagline quảng cáo; đó là khế ước cảm xúc giữa thương hiệu và triệu triệu ký ức cá nhân. Đây là mô hình rebrand của thế hệ mới: không áp đặt, không che giấu — chỉ có đối thoại, trao quyền và cùng nhau kiến tạo.'
 };
 
 export const marketingCasesDataVi: MarketingCase[] = [
@@ -863,26 +863,28 @@ export const marketingCasesDataVi: MarketingCase[] = [
     coverGradient: 'from-red-600 to-rose-700',
     frameworks: ['Pratfall Effect', 'Brand Funnel', 'Share of Voice', 'No-Script Tone'],
     detailSlug: 'case-kfc',
+    pdfUrl: '/kfc-case-study.pdf',
     detail: kfcDetailVi
   },
   {
-    id: 'case-dominos',
-    brand: "Domino's Pizza",
-    title: 'Domino\'s Pizza — Khi Thú Nhận Sự Thật Trở Thành Chiến Lược Vực Dậy Thương Hiệu',
-    industry: 'F&B / Pizza Chain',
-    period: '2009 – 2010',
-    description: 'Giải mã chiến dịch "The Pizza Turnaround": Domino\'s chủ động công bố toàn bộ chỉ trích của khách hàng lên sóng truyền hình quốc gia, thừa nhận pizza tệ như "bìa các-tông", rồi tái cấu trúc hoàn toàn công thức sản phẩm từ cốt lõi. Chiến lược Radical Honesty biến khủng hoảng thành bước nhảy tăng trưởng ngoạn mục.',
+    id: 'case-vinamilk',
+    brand: 'Vinamilk',
+    title: 'Vinamilk Rebranding — Khi Người Tiêu Dùng Trở Thành Đồng Tác Giả Của Thương Hiệu',
+    industry: 'FMCG / Ngành Sữa',
+    period: '2023 – 2024',
+    description: 'Phân tích chiến lược rebrand sau 50 năm của Vinamilk: thay vì áp đặt bộ nhận diện mới từ trên xuống, Vinamilk kích hoạt chiến dịch #VinamilkCuaToi, biến người tiêu dùng thành đồng tác giả thông qua UGC, mini-documentary không kịch bản và bộ Limited Edition Packaging cá nhân hoá. Co-creation Marketing chuyển hoá kháng cự thành tự hào sở hữu.',
     points: [
-      { icon: 'challenge',  content: 'Khách hàng đồng loạt phê phán pizza Domino\'s tệ như "bìa các-tông". Mô hình cũ ưu tiên tốc độ giao hàng (dưới 30 phút) đã hy sinh hoàn toàn chất lượng sản phẩm. Thương hiệu đứng trước nguy cơ mất niềm tin tiêu dùng diện rộng.' },
-      { icon: 'strategy',   content: 'Áp dụng "Radical Honesty Brand Turnaround Matrix": thú nhận lỗi công khai trên sóng truyền hình, minh bạch hóa toàn bộ quy trình tái cấu trúc sản phẩm (The Open Source Labs), rồi mời chính những khách hàng chỉ trích nhất đến chứng thực sản phẩm mới.' },
-      { icon: 'result',     content: 'Doanh thu tăng vượt bậc ngay trong quý tiếp theo sau chiến dịch. Cổ phiếu Domino\'s tăng phi mã. Sự hoài nghi của công chúng biến thành lòng trung thành bền vững — một trong những case Brand Turnaround kinh điển nhất lịch sử F&B.' },
-      { icon: 'insight',    content: 'Chân thành cực đoan (Radical Honesty) là vũ khí mạnh nhất khi sản phẩm gặp khủng hoảng cốt lõi. Không che giấu, không giải thích — chỉ thừa nhận và sửa đổi triệt để. Đây là chiến lược của người dẫn đầu thị trường, không phải kẻ yếu đuối.' }
+      { icon: 'challenge', content: 'Rebrand toàn diện hệ nhận diện sau 50 năm gây hoang mang cộng đồng, đặc biệt với thế hệ người dùng trung thành đã gắn bó từ thời thơ ấu. Nguy cơ lặp lại thất bại của Gap (2010) và Tropicana (2009) — mất niềm tin khi thay đổi mà không giải thích.' },
+      { icon: 'strategy',  content: 'Triển khai "Co-creation Ownership Strategy": kích hoạt #VinamilkCuaToi thu thập UGC ký ức cá nhân, phát hành mini-documentary không kịch bản về hành trình rebrand, và ra mắt Limited Edition Packaging được thiết kế từ chính nội dung của người dùng.' },
+      { icon: 'result',    content: 'Dự kiến NPS tăng +20đ (từ 32 → 52), UGC đạt đỉnh 71K lượt chia sẻ tuần 7, Sentiment tích cực +107%, tiêu cực -67%. Limited Edition Packaging dự kiến sell-through 100% trong 30 ngày đầu.' },
+      { icon: 'insight',   content: 'Người tiêu dùng không sợ thương hiệu thay đổi — họ sợ bị thay đổi mà không được giải thích. Khi trở thành đồng tác giả, kháng cự chuyển hoá thành tự hào sở hữu. Đây là mô hình rebrand thế hệ mới: không áp đặt, chỉ đồng kiến tạo.' }
     ],
-    tags: ['Radical Honesty', 'Brand Turnaround', 'Pratfall Effect', 'Crisis Communication', 'F&B Strategy'],
-    coverGradient: 'from-blue-700 to-slate-800',
-    frameworks: ['Radical Honesty', 'Pratfall Effect', 'Brand Turnaround Matrix', 'Closed-Loop Feedback'],
-    detailSlug: 'case-dominos',
-    detail: dominosDetailVi
+    tags: ['Co-creation', 'Rebranding', 'Psychology of Ownership', 'UGC', 'FMCG Strategy'],
+    coverGradient: 'from-blue-600 to-cyan-600',
+    frameworks: ['Psychology of Ownership', 'Inoculation Theory', 'Co-creation Marketing', 'Narrative Transport'],
+    detailSlug: 'case-vinamilk',
+    detail: vinamilkDetailVi,
+    pdfUrl: '/vinamilk-case-study.pdf'
   }
 ];
 
@@ -949,60 +951,60 @@ const kfcDetailEn: MarketingCaseDetailData = {
   conclusion: 'If this campaign wins, KFC cannot repeat it next season or risk "duplicate code." They must transform it into a long-term "Voice Operating System" (Consistent Voice) across all brand touchpoints — not a one-off campaign, but a permanently programmed brand personality.'
 };
 
-const dominosDetailEn: MarketingCaseDetailData = {
-  heroTitle: "Case Study #03: Domino's Pizza — When Radical Honesty Became the Ultimate Brand Turnaround",
-  brand: "Domino's Pizza",
-  opponents: 'Pizza Hut, Little Caesars & the US pizza market',
-  industry: 'F&B — Pizza Chain (USA)',
-  coreProblem: "Severe product crisis — pizza described as tasting like 'cardboard', widespread consumer trust collapse",
-  models: ['Radical Honesty', 'Brand Turnaround Matrix', 'Closed-Loop Feedback System', 'Pratfall Effect'],
-  hook: "In the late 2000s, American customers said it bluntly: Domino's pizza tastes like cardboard. Most brands would pour money into advertising to paper over the crisis. Domino's did the complete opposite — they took the harshest criticisms, broadcast them on national television, and declared: \"We hear you. We were wrong. And here's how we're fixing it.\"",
-  contextInsight: "In the late 2000s, American consumer behavior shifted dramatically: customers grew increasingly demanding about health, ingredient sourcing, and actual food quality. Domino's old operating model prioritized delivery speed above all else (the famous 30-minute guarantee), completely sacrificing taste experience. Result: customers openly comparing the crust to 'cardboard' and the sauce to 'industrial ketchup.'",
-  coreInsight: "Customers don't just need pizza delivered fast — they need a product worth the money they paid. More importantly, they expect brands to stop covering up failures and engage honestly about quality. When Domino's bravely admitted their product failures and committed to transparent improvement, public skepticism transformed into curiosity to try again.",
-  kfcSolution: "Domino's applied the 'Radical Honesty Brand Turnaround Matrix': instead of pouring ad budgets into surface-level cover-ups, they restructured from the product core, publicly disclosed their entire improvement process with radical transparency, and invited their harshest critics back to validate the new product. Result: revenue surged in the very next quarter, stock price skyrocketed.",
+const vinamilkDetailEn: MarketingCaseDetailData = {
+  heroTitle: 'Case Study #03: Vinamilk Rebranding — When Consumers Become Co-Authors of the Brand',
+  brand: 'Vinamilk',
+  opponents: 'TH True Milk, Dutch Lady, Nestlé Vietnam',
+  industry: 'FMCG — Dairy (Vietnam)',
+  coreProblem: 'Full rebrand after 50 years caused public confusion — risk of eroding trust and the emotional bond with loyal generational consumers',
+  models: ['Psychology of Ownership', 'Co-creation Marketing', 'Inoculation Theory', 'Narrative Transport'],
+  hook: "In 2023, Vinamilk announced a complete brand identity overhaul after exactly 50 years in existence. The public reaction immediately split in two: half anxious about losing cherished childhood memories, half curious. Rather than a top-down explanation or forced rollout, Vinamilk did something no other Vietnamese dairy brand had ever attempted — they handed power to consumers to become co-authors of this historic transformation.",
+  contextInsight: "Vietnamese consumer behavior is rapidly shifting: Millennials and Gen Z don't just buy products — they buy the stories and meaning attached to them. Vinamilk, with its 50-year legacy, owns an invaluable asset: transgenerational emotional memory. But rebranding without a behavioral psychology strategy will destroy that very asset. Belk's (1988) research on the 'Psychology of Ownership' reveals that consumers treat familiar brands as extensions of personal identity — when suddenly changed without warning, they experience a genuine psychological sense of loss.",
+  coreInsight: "Loyal consumers don't fear brand change — they fear being changed without being told why. When Vinamilk transformed consumers from 'passive audience' into 'active co-authors' of the rebranding journey, resistance converted into ownership pride and brand-protective commitment.",
+  kfcSolution: "Vinamilk deployed the 'Co-creation Ownership' strategy: instead of a top-down rebrand imposition, they ignited the #VinamilkCuaToi social wave where users self-narrated their personal brand memories; released unscripted mini-documentaries capturing the real creative rebrand journey; and culminated with a Limited Edition personalized packaging series built from user UGC — turning private memories into physical products you could hold in your hands. Projected results: NPS +20pts, UGC peak 71K at week 7, Sentiment +107%.",
   competitorRows: [
-    { brand: 'PR Spin Strategy',            contentChoice: 'Pour ad budget to mask the crisis',         customerPsych: '"Sounds great but nothing has changed"', systemResult: 'Trust continues to erode',           isHighlight: false },
-    { brand: 'Silent Revamp',               contentChoice: 'Improve product with no announcement',      customerPsych: '"I can\'t tell any difference"',         systemResult: 'Repositioning fails',               isHighlight: false },
-    { brand: 'Blame External Factors',      contentChoice: 'Blame supply chain or market conditions',   customerPsych: '"They take zero responsibility"',         systemResult: 'Complete credibility collapse',      isHighlight: false },
-    { brand: "Domino's Pizza",              contentChoice: 'Admit flaws, rebuild with full transparency', customerPsych: '"They\'re brave — I want to try again"', systemResult: 'Revenue surge + stock price rockets', isHighlight: true  },
+    { brand: 'TH True Milk',  contentChoice: "Repositioned as 'clean milk' with new brand identity",   customerPsych: '"Reasonable — but hasn\'t touched the heart"',   systemResult: 'Awareness raised, emotionally neutral',    isHighlight: false },
+    { brand: 'Dutch Lady',    contentChoice: 'Maintained stable visual identity, no rebrand',           customerPsych: '"Familiar, safe — but lacks a story"',          systemResult: 'Market share held, gradually losing Gen Z',  isHighlight: false },
+    { brand: 'Nestlé VN',     contentChoice: 'Basic logo rebrand, minimal communications',              customerPsych: '"Didn\'t even notice they changed anything"',    systemResult: 'Low awareness impact',                      isHighlight: false },
+    { brand: 'Vinamilk ★',    contentChoice: 'Co-creation #VinamilkCuaToi + UGC Limited Edition',      customerPsych: '"This is mine — I\'m part of this story"',      systemResult: 'NPS +20pts, UGC 71K, Sentiment +107%',      isHighlight: true  },
   ],
   frameworks: [
     {
-      id: 'pratfall',
-      name: 'Pratfall Effect',
-      concept: "Elliot Aronson's 1966 research proved: when a competent brand bravely admits its flaws with genuine sincerity, public trust and credibility increase exponentially. Domino's wasn't a bad brand — they were simply 'trying too hard to appear perfect' for too long. Once they admitted their failures, they climbed to the peak of the Brand Affection curve.",
-      uiNote: "Curve graph: X-axis = Perfection level (Normal → Trying too hard to be perfect → Self-admitting flaws). Y-axis = Brand Affection. Peak at 'Self-admitting flaws' (Domino's Pizza). Lowest point at 'Trying to appear flawlessly perfect.'"
+      id: 'generic',
+      name: 'Psychology of Ownership (Belk, 1988)',
+      concept: "Russell Belk's (1988) research proved that consumers view familiar brands as extensions of their personal identity — the 'Extended Self.' When Vinamilk suddenly changed its brand identity, users experienced a genuine sense of identity loss — not just the loss of a logo. The Co-creation strategy transforms rebranding into an opportunity for users to reassert emotional ownership: 'this brand is still mine — I helped shape it.'",
+      uiNote: "Chart: X-axis = User participation level (Passive → Informed → Co-author). Y-axis = Brand ownership sentiment. Peak at 'Co-author' (Vinamilk strategy). Lowest at 'Changed without explanation.'"
     },
     {
       id: 'generic',
-      name: 'Radical Honesty Brand Turnaround Matrix',
-      concept: '5-step process: [Quality Crisis] → [Radical Honesty: public admission] → [Core Capability Transparency: disclose improvement process] → [Narrow-Market Testing with former critics] → [Measure & Reposition]. This is the complete antithesis of "PR Spin" — no cover-ups, no explanations, no excuses. Only reality and commitment.',
-      uiNote: '5-step linear flow: Crisis → Confess → Transparent Improvement → Validate → Measure. Each step is an irreversible milestone in the brand revolution.'
+      name: 'Inoculation Theory (McGuire, 1961)',
+      concept: "William McGuire's (1961) Inoculation Theory: pre-exposing consumers to a 'small dose of antibody' — acknowledging their rebranding anxieties upfront and providing counter-arguments — immunizes them against negative narratives from competitors or public backlash. Vinamilk applied this via mini-documentary series: proactively surfacing the fear of 'losing the old brand' first, then guiding viewers through the value-preservation journey.",
+      uiNote: 'Flow: Initial concern → Public acknowledgment → Journey explanation → Identity reaffirmation → Immunity to negative narratives. Each step is a psychological "antibody dose."'
     },
     {
       id: 'generic',
-      name: 'Closed-Loop Feedback System',
-      concept: "Instead of collecting one-way feedback, Domino's established a closed-loop system: Customers complain → Brand publicly acknowledges → Product improves → Former critics invited back to validate → New feedback collected. Each loop generates genuinely authentic Social Proof that cannot be manufactured or faked.",
-      uiNote: 'Closed-loop cycle: Complaint → Acknowledge → Improve → Validate → Repeat. Not a one-way pipeline but a continuously self-improving feedback ecosystem.'
+      name: 'Narrative Transport & Co-creation Marketing',
+      concept: "Narrative Transport (Green & Brock, 2000): when consumers are immersed in a story, critical resistance decreases and emotional alignment increases. #VinamilkCuaToi made every user a storyteller — creating personal brand narratives. Co-creation Marketing (Prahalad & Ramaswamy, 2004): brand value is created together, not imposed from above. The Limited Edition Packaging is the physical embodiment of this principle.",
+      uiNote: 'Co-creation loop: Users share memories → Brand listens & integrates → Product reflects those memories → Users feel proud ownership → Share more widely. Each cycle amplifies organic reach exponentially.'
     }
   ],
   benchmark: {
-    title: "Historical Benchmark: Avis — 'We Try Harder' (1962)",
-    period: '1962',
-    story: "In 1962, Avis — the #2 car rental brand in the US market — made no attempt to hide their inferior market position. Instead, they declared outright: 'We're only number 2. We try harder.' This campaign of voluntarily admitting weakness immediately generated massive public sympathy, grew Avis's market share significantly, and turned being '#2' into a unique competitive advantage that the #1 brand simply couldn't replicate.",
-    lesson: "Lesson for Domino's: Honesty is not a sign of weakness — it is the most powerful trust-building mechanism a brand can possess. Consumers don't demand perfection — they just need a brand brave enough to be truthful and serious enough to actually change."
+    title: 'Warning Benchmarks: Gap Logo Controversy (2010) & Tropicana (2009)',
+    period: '2009 – 2010',
+    story: "In 2010, Gap quietly replaced their 20-year-old logo with zero communication strategy. The community responded with outrage — within 6 days, Gap was forced to restore the original logo. A year earlier in 2009, Tropicana rebranded their packaging without explaining why, resulting in a 20% sales drop in just 2 months. Both failures shared the same root cause: consumers were excluded from a decision about something they considered 'theirs.'",
+    lesson: "Core lesson for Vinamilk: Rebranding is not an internal corporate decision — it belongs to the community of users. Strong brands don't own their consumers; consumers own the brand. Successful strategy must transform users from 'subjects being impacted' into 'agents actively shaping the outcome.'"
   },
   kpis: [
-    { label: 'Net Promoter Score',      abbr: 'NPS', description: "Quantifies the percentage of customers who proactively recommend Domino's to friends and family after trying the new product. The core KPI measuring post-turnaround brand loyalty." },
-    { label: 'Same-Store Sales Growth', abbr: 'SSG', description: 'Revenue growth rate at existing store locations — the metric that proves genuine repeat purchase behavior without being inflated by new store openings.' },
-    { label: 'Sentiment Score',         abbr: 'SS',  description: "Brand emotion index shifting from Negative ('cardboard') → Curious → Positive. The direct performance measurement of the Radical Honesty campaign." }
+    { label: 'Net Promoter Score', abbr: 'NPS', description: 'Target: +20pts increase (from 32 → 52) — measures the proportion of users who proactively recommend Vinamilk after the rebrand. Reflects the shift from "passive acceptance" to "active advocacy" driven by the co-creation strategy.' },
+    { label: 'UGC Volume',         abbr: 'UGC', description: 'Target: 50K+ shares within the first 2 weeks — organic reach metric for the #VinamilkCuaToi campaign. Actual projected performance peaks at 71K shares in week 7 of the campaign.' },
+    { label: 'Sell-Through Rate',  abbr: 'STR', description: 'Target: 100% sell-through within 30 days for the Limited Edition Packaging — the direct commercial metric of the co-creation strategy. When users co-author the product, they buy not just the milk but a piece of their own story.' }
   ],
   playbook: [
-    { step: 1, title: 'The Confession (Go Public with Flaws)',           description: "Broadcast real customer negative feedback clips on national TV and digital platforms — unfiltered and unedited. Let customers say the absolute worst things about the product on your own channels. This voluntary exposure generates absolute public attention and establishes the credibility needed for the turnaround." },
-    { step: 2, title: 'The Open Source Labs (Transparent Improvement)',  description: "Publish real R&D kitchen footage documenting chefs completely rebuilding the pizza formula from scratch — crust, sauce, and toppings. Prove this is a genuine product revolution, not a PR campaign or surface rebrand." },
-    { step: 3, title: 'The Market Validation (Invite Critics Back)',      description: "Directly invite the harshest former critics to experience the new product version and capture their unscripted, unfiltered reactions. Transform 'judges' into 'testimonial witnesses' — the most authentic form of Social Proof that money cannot buy." }
+    { step: 1, title: 'Phase 1 — Activate #VinamilkCuaToi UGC Wave (Weeks 1–2)',     description: "Launch the hashtag campaign inviting users to share personal memories with Vinamilk — from childhood morning milk to family moments. No scripting, no staging. The brand only listens, curates, and amplifies user stories. Target: 50K+ organic shares." },
+    { step: 2, title: 'Phase 2 — Unscripted Mini-Documentary Series (Weeks 3–5)',     description: "Release a series of raw mini-documentaries capturing the real creative rebranding journey — internal debates, difficult decisions, and the philosophy of preserving core identity in a new form. Applying Inoculation Theory: proactively surface the fear of 'losing the old brand,' then guide viewers through the value-preservation process." },
+    { step: 3, title: 'Phase 3 — Personalized Limited Edition Packaging (Weeks 6–8)', description: "Launch a Limited Edition packaging series designed directly from user UGC content — real images, stories, and memories printed directly onto the product. Each milk carton becomes a community artwork. Target: 100% sell-through in 30 days. This is the apex of the Co-creation strategy — turning memory into a physical product." }
   ],
-  conclusion: "When core operations and product experience have fundamental failures, the optimal solution is not to pour ad budgets into surface-level cover-ups. The only path forward is to restructure management thinking, engage in brave public dialogue, and implement thorough, irreversible fixes. Domino's proved: when customers discover product flaws, the only way to retain them is to fix the flaw immediately — not explain that it's a 'hidden feature.' Radical honesty is not the weapon of the desperate — it is the strategic signature of true market leaders."
+  conclusion: "Rebranding is not a battle between old and new — it is a dialogue between brand and community. Vinamilk proves that when consumers are invited as co-authors, they don't just accept the change — they become its most passionate defenders. '50 years belong to us — and so does the future' is not an advertising tagline; it is an emotional contract between the brand and millions of personal memories. This is the rebrand model for the new generation: no imposition, no concealment — only dialogue, empowerment, and co-creation."
 };
 
 export const marketingCasesDataEn: MarketingCase[] = [
@@ -1023,26 +1025,28 @@ export const marketingCasesDataEn: MarketingCase[] = [
     coverGradient: 'from-red-600 to-rose-700',
     frameworks: ['Pratfall Effect', 'Brand Funnel', 'Share of Voice', 'No-Script Tone'],
     detailSlug: 'case-kfc',
+    pdfUrl: '/kfc-case-study.pdf',
     detail: kfcDetailEn
   },
   {
-    id: 'case-dominos',
-    brand: "Domino's Pizza",
-    title: "Domino's Pizza — When Radical Honesty Became the Ultimate Brand Turnaround Strategy",
-    industry: 'F&B / Pizza Chain',
-    period: '2009 – 2010',
-    description: "Breaking down 'The Pizza Turnaround' campaign: Domino's voluntarily broadcast their harshest customer criticisms on national TV, admitted their pizza tasted like 'cardboard', then completely restructured their product formula from the ground up. The Radical Honesty strategy transformed a crisis into a remarkable growth breakthrough.",
+    id: 'case-vinamilk',
+    brand: 'Vinamilk',
+    title: 'Vinamilk Rebranding — When Consumers Become Co-Authors of the Brand',
+    industry: 'FMCG / Dairy',
+    period: '2023 – 2024',
+    description: "Analyzing Vinamilk's 50-year identity overhaul: instead of a top-down rebrand, Vinamilk activated the #VinamilkCuaToi campaign, transforming consumers into co-authors through UGC, unscripted mini-documentaries, and personalized Limited Edition Packaging. Co-creation Marketing converts resistance into ownership pride.",
     points: [
-      { icon: 'challenge',  content: "Customers openly criticized Domino's pizza as tasting like 'cardboard.' The delivery-speed-first model (under 30 minutes guaranteed) had completely sacrificed product quality. The brand faced a widespread consumer trust collapse with no obvious path forward." },
-      { icon: 'strategy',   content: "Applied the 'Radical Honesty Brand Turnaround Matrix': publicly admitted flaws on national TV, transparently documented the entire product restructuring process (The Open Source Labs), then invited their harshest critics back to validate the new product formula." },
-      { icon: 'result',     content: "Revenue surged dramatically in the very next quarter. Domino's stock price skyrocketed. Public skepticism transformed into lasting loyalty — one of the most iconic Brand Turnaround case studies in F&B history." },
-      { icon: 'insight',    content: "Radical Honesty is the most powerful weapon when a product faces a core crisis. No cover-ups, no explanations — only honest admission and thorough fixes. This is the strategy of market leaders, not a desperate act of the weak." }
+      { icon: 'challenge', content: "A full rebrand after 50 years confused the community — especially loyal generational users who grew up with the brand. The risk of repeating Gap (2010) and Tropicana (2009) failures loomed: losing consumer trust by changing without explanation." },
+      { icon: 'strategy',  content: "Deployed the 'Co-creation Ownership Strategy': activated #VinamilkCuaToi UGC to collect personal memory stories, released unscripted mini-documentaries about the rebrand journey, and launched a Limited Edition Packaging series designed directly from user content." },
+      { icon: 'result',    content: "Projected outcomes: NPS +20pts (32 → 52), UGC peak 71K shares at week 7, positive Sentiment +107%, negative sentiment -67%. Limited Edition Packaging projected to achieve 100% sell-through within the first 30 days." },
+      { icon: 'insight',   content: "Consumers don't fear brand change — they fear being changed without explanation. When they become co-authors, resistance transforms into ownership pride. This is the next-generation rebrand model: no imposition, only co-creation." }
     ],
-    tags: ['Radical Honesty', 'Brand Turnaround', 'Pratfall Effect', 'Crisis Communication', 'F&B Strategy'],
-    coverGradient: 'from-blue-700 to-slate-800',
-    frameworks: ['Radical Honesty', 'Pratfall Effect', 'Brand Turnaround Matrix', 'Closed-Loop Feedback'],
-    detailSlug: 'case-dominos',
-    detail: dominosDetailEn
+    tags: ['Co-creation', 'Rebranding', 'Psychology of Ownership', 'UGC', 'FMCG Strategy'],
+    coverGradient: 'from-blue-600 to-cyan-600',
+    frameworks: ['Psychology of Ownership', 'Inoculation Theory', 'Co-creation Marketing', 'Narrative Transport'],
+    detailSlug: 'case-vinamilk',
+    detail: vinamilkDetailEn,
+    pdfUrl: '/vinamilk-case-study.pdf'
   }
 ];
 

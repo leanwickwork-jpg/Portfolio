@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'motion/react';
 import {
   ArrowLeft, Layers, Target, AlertCircle, Lightbulb, TrendingUp, Star,

@@ -1,9 +1,49 @@
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Download, Send, MapPin, Layers, Award, Sparkles } from 'lucide-react';
+import { ArrowRight, Download, Send, MapPin, Layers, Award, Sparkles, FolderOpen } from 'lucide-react';
 import { heroTranslations } from '../translations';
 import TuanAnhPortrait from '../assets/images/anh.jpg';
 import TextScramble from './TextScramble';
 import GlowWrapper from './GlowWrapper';
+
+/* ─── Magnetic Button ─────────────────────────────────────────────────────── */
+function MagneticBtn({
+  children, className, onClick, href, target, rel,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  onClick?: () => void;
+  href?: string;
+  target?: string;
+  rel?: string;
+}) {
+  const [xy, setXY] = useState({ x: 0, y: 0 });
+  const idle = xy.x === 0 && xy.y === 0;
+
+  const handleMove = (e: React.MouseEvent<HTMLElement>) => {
+    const r = e.currentTarget.getBoundingClientRect();
+    setXY({ x: (e.clientX - r.left - r.width / 2) * 0.22, y: (e.clientY - r.top - r.height / 2) * 0.22 });
+  };
+  const handleLeave = () => setXY({ x: 0, y: 0 });
+
+  const magStyle: React.CSSProperties = {
+    transform: `translate(${xy.x}px, ${xy.y}px)`,
+    transition: idle ? 'transform 0.45s cubic-bezier(0.23, 1, 0.32, 1)' : 'transform 0.1s ease',
+  };
+
+  if (href) return (
+    <a href={href} target={target} rel={rel} className={className} style={magStyle}
+      onMouseMove={handleMove} onMouseLeave={handleLeave}>
+      {children}
+    </a>
+  );
+  return (
+    <button className={className} style={magStyle} onClick={onClick}
+      onMouseMove={handleMove} onMouseLeave={handleLeave}>
+      {children}
+    </button>
+  );
+}
 
 interface HeroProps {
   lang: 'vi' | 'en';
@@ -13,6 +53,7 @@ interface HeroProps {
 
 export default function Hero({ lang, onScrollToSection, onOpenCvModal }: HeroProps) {
   const t = heroTranslations[lang];
+  const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
     <section id="hero" className="relative min-h-screen flex flex-col justify-center pt-28 pb-16 sm:pt-36 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white">
@@ -69,8 +110,12 @@ export default function Hero({ lang, onScrollToSection, onOpenCvModal }: HeroPro
               <h2 className="text-xs sm:text-sm font-extrabold tracking-widest text-blue-600 uppercase font-mono">
                 {t.subtitle}
               </h2>
-              <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-neutral-950 leading-tight">
-                <TextScramble text="LÊ VÕ TUẤN ANH" duration={1.2} />
+              <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-tight">
+                <TextScramble
+                  text="LÊ VÕ TUẤN ANH"
+                  duration={1.2}
+                  className="bg-gradient-to-r from-blue-600 via-violet-500 to-purple-600 bg-clip-text text-transparent"
+                />
               </h1>
               
               {/* Specialized Tag row */}
@@ -107,26 +152,36 @@ export default function Hero({ lang, onScrollToSection, onOpenCvModal }: HeroPro
               transition={{ duration: 0.8, delay: 0.3 }}
               className="flex flex-wrap items-center gap-3.5"
             >
-              <button
+              <MagneticBtn
                 onClick={() => onScrollToSection('projects')}
-                className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-neutral-900 text-white hover:bg-neutral-800 duration-200 cursor-pointer flex items-center justify-center gap-2 shadow-sm whitespace-nowrap hover:scale-101 active:scale-99 transition-all"
+                className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-neutral-900 text-white hover:bg-neutral-800 duration-200 cursor-pointer flex items-center justify-center gap-2 shadow-sm whitespace-nowrap"
               >
                 {t.btnProjects} <ArrowRight className="w-4 h-4" />
-              </button>
-              
-              <button
+              </MagneticBtn>
+
+              <MagneticBtn
                 onClick={onOpenCvModal}
-                className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-white border border-neutral-220 text-neutral-800 hover:bg-neutral-50 duration-200 cursor-pointer flex items-center justify-center gap-2 shadow-xs whitespace-nowrap hover:scale-101 active:scale-99 transition-all"
+                className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-white border border-neutral-220 text-neutral-800 hover:bg-neutral-50 duration-200 cursor-pointer flex items-center justify-center gap-2 shadow-xs whitespace-nowrap"
               >
                 {t.btnCv} <Download className="w-4 h-4" />
-              </button>
+              </MagneticBtn>
 
-              <button
+              <MagneticBtn
+                href="https://drive.google.com/drive/folders/1OrxgSeRFzbSh2fEPbzKawApqq8nATJDg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white duration-200 cursor-pointer flex items-center justify-center gap-2 shadow-sm whitespace-nowrap"
+              >
+                <FolderOpen className="w-4 h-4" />
+                {lang === 'vi' ? 'Sản phẩm' : 'My Works'}
+              </MagneticBtn>
+
+              <MagneticBtn
                 onClick={() => onScrollToSection('contact')}
-                className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white duration-200 cursor-pointer flex items-center justify-center gap-2 shadow-sm whitespace-nowrap hover:scale-101 active:scale-99 transition-all"
+                className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white duration-200 cursor-pointer flex items-center justify-center gap-2 shadow-sm whitespace-nowrap"
               >
                 {t.btnContact} <Send className="w-4 h-4" />
-              </button>
+              </MagneticBtn>
             </motion.div>
 
           </div>
@@ -160,20 +215,22 @@ export default function Hero({ lang, onScrollToSection, onOpenCvModal }: HeroPro
                 className="absolute inset-0 border border-dashed border-blue-500/10 rounded-full scale-110 pointer-events-none"
               />
 
+              {/* Skeleton loading placeholder */}
+              {!imgLoaded && (
+                <div className="absolute inset-3 z-[5] bg-gradient-to-br from-neutral-100 via-neutral-50 to-neutral-100 rounded-2xl animate-pulse" />
+              )}
+
               {/* The high quality generated portrait */}
-              <img 
-                src={TuanAnhPortrait} 
-                alt="Portrait of Lê Võ Tuấn Anh" 
-                className="w-full h-full object-cover object-top rounded-2xl transition-transform duration-500 group-hover:scale-102"
+              <img
+                src={TuanAnhPortrait}
+                alt="Portrait of Lê Võ Tuấn Anh"
+                className={`w-full h-full object-cover object-top rounded-2xl transition-all duration-700 group-hover:scale-102 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
                 referrerPolicy="no-referrer"
+                onLoad={() => setImgLoaded(true)}
               />
 
               {/* Floating micro achievement cards overlays */}
-              <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-8 -left-6 bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-neutral-200 shadow-lg z-20 flex items-center gap-2"
-              >
+              <div className="absolute top-8 -left-6 bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-neutral-200 shadow-lg z-20 flex items-center gap-2">
                 <div className="p-1.5 bg-blue-500/15 rounded-lg text-blue-600">
                   <Award className="w-4 h-4" />
                 </div>
@@ -185,13 +242,9 @@ export default function Hero({ lang, onScrollToSection, onOpenCvModal }: HeroPro
                     {lang === 'vi' ? 'Sự Kiện 2024' : 'Event 2024'}
                   </p>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                animate={{ y: [0, 6, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
-                className="absolute bottom-8 -right-6 bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-neutral-200 shadow-lg z-20 flex items-center gap-2"
-              >
+              <div className="absolute bottom-8 -right-6 bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-neutral-200 shadow-lg z-20 flex items-center gap-2">
                 <div className="p-1.5 bg-emerald-500/15 rounded-lg text-emerald-600">
                   <Sparkles className="w-4 h-4" />
                 </div>
@@ -199,7 +252,7 @@ export default function Hero({ lang, onScrollToSection, onOpenCvModal }: HeroPro
                   <p className="text-[10px] font-bold text-neutral-850">0 VNĐ Ads</p>
                   <p className="text-[8px] text-neutral-400">Organic Growth</p>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Custom floating strategic rotation wheel */}
               <motion.div
