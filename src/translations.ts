@@ -845,6 +845,62 @@ const vinamilkDetailVi: MarketingCaseDetailData = {
   conclusion: 'Rebrand không phải cuộc chiến giữa cũ và mới — đó là cuộc đối thoại giữa thương hiệu và cộng đồng. Vinamilk chứng minh rằng khi người tiêu dùng được mời làm đồng tác giả, họ không chỉ chấp nhận sự thay đổi — họ trở thành người bảo vệ nhiệt thành nhất cho nó. "50 năm là của chúng ta — tương lai cũng vậy" không phải tagline quảng cáo; đó là khế ước cảm xúc giữa thương hiệu và triệu triệu ký ức cá nhân. Đây là mô hình rebrand của thế hệ mới: không áp đặt, không che giấu — chỉ có đối thoại, trao quyền và cùng nhau kiến tạo.'
 };
 
+const drmDetailVi: MarketingCaseDetailData = {
+  heroTitle: 'Case Study #04: DRM Design — Khi Bài Toán B2B Conversion Không Phải Về Lead, Mà Về Niềm Tin',
+  brand: 'DRM Design',
+  opponents: 'Đơn vị thiết kế đa ngành giá rẻ, Freelance Designer, Studio lớn từ TP.HCM/Hà Nội',
+  industry: 'Interior Design & Thi Công Thương Mại — F&B Cafe/Nhà Hàng (B2B, Miền Trung)',
+  coreProblem: '100–120 lead/tháng nhưng chỉ 40–50% đủ chất lượng; conversion rate 10–15% trong ngành dịch vụ B2B cao cấp mà khách hàng không thể "dùng thử" trước khi đầu tư 300–800 triệu',
+  models: ['Lead Quality Funnel', 'TOFU-MOFU-BOFU Content Strategy', 'Social Proof Arsenal', 'Customer Decision Journey Mapping'],
+  hook: 'Ngân sách 12–15 triệu/tháng. Mục tiêu 100 triệu doanh thu. Tỷ lệ chuyển đổi 10–15%. Và một bài toán mà không ai trong team marketing nói thẳng ra: khách hàng phải quyết định đầu tư 300–800 triệu vào một thứ họ chưa được chạm tay vào — một không gian chưa tồn tại. Đây không phải bài toán lead generation bình thường. Đây là bài toán kiến tạo niềm tin trong ngành dịch vụ B2B cao cấp — ngành mà "thấy mới tin" nhưng chưa có gì để thấy.',
+  contextInsight: 'Thị trường thiết kế-thi công F&B miền Trung đang trong giai đoạn nhiễu loạn: đơn vị đa ngành giá rẻ mọc lên khắp nơi, freelancer cắt giảm chi phí tối đa, khách hàng không biết phân biệt ai thực sự chuyên nghiệp. Hành vi quyết định của "Anh Minh" — chủ quán cafe 30–42 tuổi, ngân sách 300–800 triệu — kéo dài 1–3 tháng từ giai đoạn nhận thức đến ký hợp đồng. Trong suốt quãng thời gian đó, họ quan sát, so sánh và tìm bằng chứng để giải tỏa 3 nỗi lo cốt lõi: (1) Thiết kế không độc đáo, không thu hút khách; (2) Chi phí phát sinh không minh bạch; (3) Nhà thầu thiếu chuyên nghiệp trong khâu thi công.',
+  coreInsight: 'Trong B2B dịch vụ thiết kế-thi công, khách hàng không mua "bản vẽ đẹp" — họ mua "sự chắc chắn rằng khoản đầu tư 300–800 triệu sẽ không bị phí". Đây không phải bài toán tăng số lượng lead — mà là bài toán kiến tạo niềm tin có hệ thống, để khi khách hàng đến giai đoạn quyết định sau 1–3 tháng cân nhắc, DRM Design là cái tên họ nhớ đến đầu tiên và tin tưởng nhất.',
+  kfcSolution: 'DRM Design triển khai "Trust-First Conversion System" — hệ thống 3 tầng đồng bộ: (1) Tối ưu đầu phễu — Facebook Ads targeting chính xác theo hành vi (admin trang F&B, theo dõi nhóm nội thất cafe, đang tìm mặt bằng kinh doanh) kết hợp Lead Magnet lọc đúng đối tượng; (2) Social Proof Arsenal — bộ nội dung before-after, video testimonial KH, quy trình làm việc minh bạch giải quyết trực tiếp 3 nỗi lo cốt lõi; (3) Content Ecosystem dài hạn — TikTok viral tips + SEO địa phương + seeding hội nhóm chủ quán, đảm bảo DRM xuất hiện liên tục suốt hành trình quyết định 1–3 tháng. Mục tiêu: Lead chất lượng 60–70/tháng, conversion 15–20%, reach 200K+.',
+  competitorRows: [
+    { brand: 'Đơn vị đa ngành giá rẻ', contentChoice: 'Nhận mọi loại công trình, giá thấp hơn thị trường',                     customerPsych: '"Rẻ hơn — nhưng họ thực sự hiểu không gian cafe chưa?"',     systemResult: 'Lead về nhiều, quality thấp — dễ rơi vào price war', isHighlight: false },
+    { brand: 'Freelance Designer',      contentChoice: 'Chi phí linh hoạt, portfolio phong phú trên mạng',                      customerPsych: '"Bản vẽ đẹp — nhưng ai theo dõi thi công xuyên suốt?"',    systemResult: 'Thiếu Social Proof hệ thống, khó build trust B2B',    isHighlight: false },
+    { brand: 'Studio lớn HCM/HN',      contentChoice: 'Portfolio đẹp, thương hiệu mạnh từ thị trường lớn',                    customerPsych: '"Chuyên nghiệp — nhưng xa quá, hiểu miền Trung không?"', systemResult: 'Bất lợi địa lý — chi phí cao, follow-up khó',         isHighlight: false },
+    { brand: 'DRM Design ★',           contentChoice: 'Chuyên F&B miền Trung, portfolio công trình thực địa, quy trình minh bạch', customerPsych: '"Họ hiểu quán cafe ở đây, portfolio thật, tư vấn nhanh — tin được"', systemResult: 'Lead chất lượng tăng + Conversion rate bền vững', isHighlight: true  },
+  ],
+  frameworks: [
+    {
+      id: 'generic',
+      name: 'Lead Quality Funnel & Behavioral Targeting',
+      concept: 'Thay vì tối ưu số lượng lead, tối ưu chất lượng đầu vào bằng cách targeting đúng hành vi: nhắm vào người đang admin trang F&B, đang theo dõi nhóm thiết kế nội thất cafe, đang tìm mặt bằng kinh doanh — những tín hiệu ý định mạnh nhất. Kết hợp Lead Magnet chuyên sâu ("Checklist 7 điều cần biết trước khi thiết kế quán cafe") để lọc đối tượng ngay từ bước đầu tiên. Bộ câu hỏi qualifying trong Messenger xác nhận ngân sách + timeline trước khi chuyển sang tư vấn.',
+      uiNote: 'Phễu 3 tầng: Targeting rộng (Reach 200K+) → Lead Magnet lọc (60–70 leads chất lượng) → Qualifying Messenger (8–9 HĐ/tháng). Mỗi tầng là một bộ lọc — càng xuống sâu, chất lượng càng cao.'
+    },
+    {
+      id: 'generic',
+      name: 'TOFU-MOFU-BOFU Content Strategy',
+      concept: 'Ánh xạ nội dung theo từng giai đoạn hành trình 1–3 tháng của khách hàng: TOFU (Awareness) — TikTok tips thiết kế, video behind-the-scenes công trình, seeding hội nhóm chủ quán; MOFU (Consideration) — before-after portfolio, educational content "Ngân sách 500tr phân bổ như nào", video quy trình làm việc; BOFU (Decision) — testimonial video KH cụ thể, tư vấn miễn phí, limited offer tạo urgency. Mỗi tầng có mục tiêu và format content khác nhau, không thể dùng một loại content cho cả 3 tầng.',
+      uiNote: 'Timeline 3 giai đoạn: TOFU (tuần 1–4, khách hàng mới nhận ra nhu cầu) → MOFU (tuần 5–10, đang so sánh) → BOFU (tuần 11–12, sắp quyết định). DRM phải hiện diện ở cả 3 giai đoạn để không "mất" khách ở bất kỳ điểm nào.'
+    },
+    {
+      id: 'generic',
+      name: 'Social Proof Arsenal & Trust Architecture',
+      concept: 'Trong ngành B2B dịch vụ "mua trước khi thấy", Social Proof là vũ khí conversion mạnh nhất. "Arsenal" (kho vũ khí) gồm 4 loại: (1) Portfolio trực quan — ảnh chuyên nghiệp, video tour, so sánh 3D vs thực tế; (2) Testimonial video — KH cũ tự kể kết quả sau 3–6 tháng khai trương; (3) Process Transparency — ghi lại từng bước làm việc để giải tỏa nỗi lo "phát sinh chi phí"; (4) Before-After Story — kể câu chuyện thương hiệu của từng công trình. Bốn loại này tấn công đồng thời vào 3 nỗi lo cốt lõi của khách hàng.',
+      uiNote: 'Ma trận 2x2: Trục X = Giai đoạn hành trình (Awareness → Decision). Trục Y = Mức độ giải tỏa nỗi lo (Thấp → Cao). Testimonial video nằm ở góc phần tư cao nhất — giải tỏa nhiều nhất, phù hợp giai đoạn BOFU.'
+    }
+  ],
+  benchmark: {
+    title: 'Benchmark Chiến Lược: Airbnb Professional Photography Initiative (2009)',
+    period: '2009',
+    story: 'Năm 2009, Airbnb đang vật lộn với vấn đề tương tự DRM Design: khách hàng phải trả tiền cho một thứ họ chưa được trải nghiệm tận nơi. Giải pháp không phải giảm giá hay tăng ads — Airbnb thuê nhiếp ảnh gia chuyên nghiệp đến chụp lại từng căn phòng cho các host. Kết quả: tỷ lệ đặt phòng tăng 200% tại các listing có ảnh chuyên nghiệp. Insight cốt lõi: khi khách hàng không thể "dùng thử", chất lượng visual proof là đòn bẩy conversion mạnh nhất.',
+    lesson: 'Bài học cho DRM Design: Đầu tư vào portfolio chất lượng cao — ảnh chuyên nghiệp, video tour thực tế, so sánh 3D vs hoàn thiện — không phải chi phí mà là đòn bẩy conversion. Một bộ Social Proof Arsenal xây dựng đúng cách có thể tăng tỷ lệ chuyển đổi nhiều hơn gấp đôi ngân sách quảng cáo trong ngành dịch vụ B2B.'
+  },
+  kpis: [
+    { label: 'Lead Quality Rate',      abbr: 'LQR', description: 'Tỷ lệ % lead đủ tiêu chí (ngân sách 300tr+, timeline xác định, loại công trình F&B) / tổng leads — target tăng từ 40–50% lên 60–70%. Đây là KPI cốt lõi phản ánh hiệu quả targeting và Lead Magnet.' },
+    { label: 'Conversion Rate',        abbr: 'CVR', description: 'Tỷ lệ % lead chất lượng → hợp đồng ký kết — target tăng từ 10–15% lên 15–20%. Tăng 5% = +2–3 hợp đồng/tháng ≈ +24–36 triệu doanh thu mà không cần tăng ngân sách.' },
+    { label: 'Monthly Organic Reach',  abbr: 'MOR', description: 'Lượt tiếp cận tự nhiên/tháng qua TikTok + SEO + seeding hội nhóm — target từ 80–100K lên 200K+. Đảm bảo DRM hiện diện liên tục trong hành trình quyết định 1–3 tháng của khách hàng.' }
+  ],
+  playbook: [
+    { step: 1, title: 'Phase 1 — Tái Cấu Trúc Phễu Lead (Tuần 1–2)',        description: 'Audit toàn bộ data ads hiện tại, xác định audience segment có conversion cao nhất. Tái cấu trúc Facebook Ads targeting theo hành vi: admin trang F&B, đang theo dõi nhóm thiết kế nội thất cafe, đang tìm mặt bằng kinh doanh. Tạo Lead Magnet "Checklist 7 điều cần biết trước khi thiết kế quán cafe" — vừa lọc đúng đối tượng vừa thể hiện chuyên môn F&B từ điểm tiếp xúc đầu tiên. Xây dựng bộ câu hỏi qualifying trong Messenger để xác nhận ngân sách và timeline sớm.' },
+    { step: 2, title: 'Phase 2 — Xây Social Proof Arsenal (Tuần 3–5)',       description: 'Sản xuất bộ content Social Proof hệ thống: (1) Video testimonial 60–90 giây từ 3 khách hàng đã hoàn thiện công trình; (2) Carousel before-after + so sánh 3D vs thực tế cho 5 công trình nổi bật; (3) Series "Quy trình 5 bước làm việc minh bạch" giải tỏa nỗi lo phát sinh chi phí; (4) "Câu chuyện thương hiệu" đằng sau từng công trình — tại sao mỗi không gian là độc bản. Đồng thời thiết lập quy trình chăm sóc lead 72h: Inbox → tư vấn sơ bộ → gửi portfolio phù hợp → lịch hẹn xem thực địa.' },
+    { step: 3, title: 'Phase 3 — Kích Hoạt Content Ecosystem (Tuần 6–8)',   description: 'Kích hoạt đồng thời 3 kênh: (1) TikTok 2 video/tuần — "Behind the scenes công trình Hòn Quê Restaurant" + "Tips thiết kế cafe tiết kiệm 20% chi phí"; (2) SEO địa phương cho từ khóa "thiết kế cafe đà nẵng", "thi công nhà hàng hội an", "thiết kế quán cafe miền trung"; (3) Seeding 3–5 hội nhóm Facebook/tuần: chủ quán F&B miền Trung, hội thuê mặt bằng cafe, group kinh doanh f&b đà nẵng. Content Ecosystem đảm bảo DRM xuất hiện đúng lúc tại mọi điểm tiếp xúc trong hành trình 1–3 tháng.' }
+  ],
+  conclusion: 'Đây không phải bài toán "content nhiều hơn" hay "ads mạnh hơn" — mà là bài toán xây dựng một hệ thống niềm tin đồng bộ từ awareness đến conversion. Với hành trình quyết định 1–3 tháng và khoản đầu tư 300–800 triệu, khách hàng của DRM Design không mua bằng cảm xúc nhất thời — họ mua sau khi đã quan sát, so sánh và tự thuyết phục bản thân qua nhiều điểm chạm. Nhiệm vụ của marketing không phải "thuyết phục ngay" — mà là "xuất hiện đúng lúc, đúng chỗ, đủ đáng tin" trong suốt hành trình đó. Khi Trust-First System vận hành đồng bộ — lead chất lượng tăng, conversion tăng, revenue tăng — mà không cần tăng ngân sách.'
+};
+
 export const marketingCasesDataVi: MarketingCase[] = [
   {
     id: 'case-kfc',
@@ -885,6 +941,25 @@ export const marketingCasesDataVi: MarketingCase[] = [
     detailSlug: 'case-vinamilk',
     detail: vinamilkDetailVi,
     pdfUrl: '/vinamilk-case-study.pdf'
+  },
+  {
+    id: 'case-drm',
+    brand: 'DRM Design',
+    title: 'DRM Design — Khi Bài Toán B2B Conversion Không Phải Về Lead, Mà Về Niềm Tin',
+    industry: 'Interior Design / F&B Commercial',
+    period: '2026 · Bài kiểm tra đầu vào',
+    description: 'Phân tích chiến lược marketing cho công ty thiết kế F&B chuyên biệt tại miền Trung: giải bài toán tăng lead chất lượng từ 40–50% lên 60–70%, conversion từ 10–15% lên 15–20% với ngân sách 12–15 triệu/tháng. Bài toán B2B khi khách hàng phải đầu tư 300–800 triệu vào một không gian chưa tồn tại.',
+    points: [
+      { icon: 'challenge', content: '100–120 lead/tháng nhưng chỉ 40–50% đủ chất lượng. Conversion rate 10–15% trong ngành B2B cao cấp — khách hàng mất 1–3 tháng cân nhắc, không thể "dùng thử" trước khi ký hợp đồng 300–800 triệu. Cạnh tranh từ đơn vị đa ngành giá rẻ và studio lớn từ HCM/HN.' },
+      { icon: 'strategy',  content: 'Triển khai "Trust-First Conversion System" — 3 tầng đồng bộ: (1) Tái cấu trúc targeting Facebook theo hành vi + Lead Magnet lọc đối tượng; (2) Xây Social Proof Arsenal (before-after, testimonial video, quy trình minh bạch); (3) Content Ecosystem TikTok + SEO địa phương + seeding hội nhóm chủ quán.' },
+      { icon: 'result',    content: 'Mục tiêu: Lead chất lượng tăng lên 60–70/tháng, conversion 15–20% (+2–3 HĐ/tháng ≈ +24–36 triệu doanh thu không tăng ngân sách), reach tự nhiên 200K+/tháng. Hệ thống tư vấn lead 72h giảm thời gian chốt hợp đồng.' },
+      { icon: 'insight',   content: 'Khách hàng B2B không mua "bản vẽ đẹp" — họ mua "sự chắc chắn khoản đầu tư không bị phí". Marketing không phải "thuyết phục ngay" mà là "xuất hiện đúng lúc, đúng chỗ, đủ đáng tin" suốt 1–3 tháng hành trình quyết định.' }
+    ],
+    tags: ['B2B Marketing', 'Lead Quality Funnel', 'Social Proof', 'TOFU-MOFU-BOFU', 'Interior Design Strategy'],
+    coverGradient: 'from-amber-700 to-orange-600',
+    frameworks: ['Lead Quality Funnel', 'TOFU-MOFU-BOFU', 'Social Proof Arsenal', 'Customer Decision Journey'],
+    detailSlug: 'case-drm',
+    detail: drmDetailVi
   }
 ];
 
@@ -1007,6 +1082,62 @@ const vinamilkDetailEn: MarketingCaseDetailData = {
   conclusion: "Rebranding is not a battle between old and new — it is a dialogue between brand and community. Vinamilk proves that when consumers are invited as co-authors, they don't just accept the change — they become its most passionate defenders. '50 years belong to us — and so does the future' is not an advertising tagline; it is an emotional contract between the brand and millions of personal memories. This is the rebrand model for the new generation: no imposition, no concealment — only dialogue, empowerment, and co-creation."
 };
 
+const drmDetailEn: MarketingCaseDetailData = {
+  heroTitle: 'Case Study #04: DRM Design — When B2B Conversion Is Not About Leads, But About Trust',
+  brand: 'DRM Design',
+  opponents: 'Generic multi-industry design firms, Freelance Designers, Large studios from Ho Chi Minh City / Hanoi',
+  industry: 'Interior Design & Commercial Construction — F&B Cafe/Restaurant (B2B, Central Vietnam)',
+  coreProblem: '100–120 leads/month but only 40–50% qualify; 10–15% conversion rate in a high-ticket B2B service where clients cannot "try before they buy" a 300–800M VND investment',
+  models: ['Lead Quality Funnel', 'TOFU-MOFU-BOFU Content Strategy', 'Social Proof Arsenal', 'Customer Decision Journey Mapping'],
+  hook: "12–15M VND monthly budget. 100M VND revenue target. 10–15% conversion rate. And one problem no one on the team says out loud: clients are asked to commit 300–800M VND to something they can't touch yet — a space that doesn't exist. This isn't a standard lead generation problem. This is a trust-building problem in a high-ticket B2B service industry where 'seeing is believing' — but there's nothing to see yet.",
+  contextInsight: "Central Vietnam's F&B interior design market is saturated with noise: generic multi-industry firms undercut on price, freelancers minimize costs, and clients can't tell who is genuinely professional. 'Anh Minh' — the typical cafe owner, age 30–42, budget 300–800M VND — takes 1–3 months to go from recognizing a need to signing a contract. Throughout those months, he observes, compares, and searches for evidence to resolve three core fears: (1) The design won't be unique enough to attract customers; (2) Costs will balloon with hidden charges; (3) The contractor will be unprofessional during construction.",
+  coreInsight: "In B2B design-and-build services, clients don't buy 'beautiful blueprints' — they buy 'certainty that their 300–800M VND investment won't be wasted.' This is not a lead volume problem — it's a systematic trust-building problem. The goal is to ensure that when a client reaches their decision moment after 1–3 months of consideration, DRM Design is the first name they remember and the one they trust most.",
+  kfcSolution: "DRM Design deploys a 'Trust-First Conversion System' — a synchronized 3-layer approach: (1) Top-of-funnel optimization — Facebook Ads behavioral targeting (F&B page admins, interior design followers, active commercial lease seekers) combined with a Lead Magnet that filters qualified prospects; (2) Social Proof Arsenal — before-after content, client testimonial videos, transparent process documentation addressing all three core fears directly; (3) Long-term Content Ecosystem — TikTok viral tips + local SEO + F&B owner community seeding, ensuring DRM is present throughout the entire 1–3 month decision journey. Targets: 60–70 quality leads/month, 15–20% conversion, 200K+ organic reach.",
+  competitorRows: [
+    { brand: 'Generic Multi-Industry Firms', contentChoice: 'Accept all project types, price below market',                customerPsych: '"Cheaper — but do they actually understand cafe design specifics?"', systemResult: 'High lead volume, low quality — price-war trap',        isHighlight: false },
+    { brand: 'Freelance Designers',          contentChoice: 'Flexible pricing, large online portfolio',                    customerPsych: '"Nice designs — but who supervises the construction?"',         systemResult: 'No systematic Social Proof, hard to build B2B trust',  isHighlight: false },
+    { brand: 'Big City Studios (HCM/HN)',    contentChoice: 'Strong portfolio and brand from major markets',               customerPsych: '"Professional — but too far away, do they know Central Vietnam?"', systemResult: 'Geographic disadvantage — high costs, poor follow-up', isHighlight: false },
+    { brand: 'DRM Design ★',                contentChoice: 'F&B specialist in Central Vietnam, real local portfolio, transparent process', customerPsych: '"They understand local cafes, real portfolio, fast response — trustworthy"', systemResult: 'Quality leads increase + sustainable conversion rate', isHighlight: true  },
+  ],
+  frameworks: [
+    {
+      id: 'generic',
+      name: 'Lead Quality Funnel & Behavioral Targeting',
+      concept: "Rather than optimizing for lead volume, optimize for lead quality at the intake stage through precision behavioral targeting: F&B page admins, interior design community followers, active commercial lease seekers — the strongest intent signals available. Combine with a deep-value Lead Magnet ('7 Things to Know Before Designing Your Cafe') to filter prospects and demonstrate F&B expertise from the very first touchpoint. A Messenger qualifying script confirms budget and timeline before any sales effort begins.",
+      uiNote: '3-layer funnel: Broad targeting (Reach 200K+) → Lead Magnet filter (60–70 quality leads) → Messenger qualification (8–9 contracts/month). Each layer is a progressively tighter filter — depth equals quality.'
+    },
+    {
+      id: 'generic',
+      name: 'TOFU-MOFU-BOFU Content Strategy',
+      concept: "Map content to each stage of the 1–3 month client journey: TOFU (Awareness) — TikTok design tips, behind-the-scenes construction footage, community seeding in F&B owner groups; MOFU (Consideration) — before-after portfolios, educational content on 'How to allocate a 500M VND budget', transparent process walkthroughs; BOFU (Decision) — specific client testimonials, free consultation offers, limited availability triggers. Each funnel layer requires distinct content format and message — using one content type for all three stages is a critical conversion failure.",
+      uiNote: '3-phase timeline: TOFU (weeks 1–4, prospect first recognizes need) → MOFU (weeks 5–10, actively comparing options) → BOFU (weeks 11–12, ready to decide). DRM must be present across all three phases to avoid losing clients at any touchpoint.'
+    },
+    {
+      id: 'generic',
+      name: 'Social Proof Arsenal & Trust Architecture',
+      concept: "In B2B 'buy before you see' service industries, Social Proof is the single most powerful conversion lever. The 'Arsenal' consists of four weapon types: (1) Visual Portfolio — professional photography, video tours, 3D-vs-reality comparisons; (2) Testimonial Videos — past clients describing business results 3–6 months post-opening; (3) Process Transparency — step-by-step documentation that neutralizes hidden-cost anxiety; (4) Brand Story Content — the narrative behind each unique commercial space. All four attack the three core client fears simultaneously.",
+      uiNote: '2x2 matrix: X-axis = Decision journey stage (Awareness → Decision). Y-axis = Fear-resolution power (Low → High). Testimonial videos score highest — maximum trust resolution, optimal for BOFU stage.'
+    }
+  ],
+  benchmark: {
+    title: 'Strategic Benchmark: Airbnb Professional Photography Initiative (2009)',
+    period: '2009',
+    story: "In 2009, Airbnb faced an identical challenge to DRM Design: customers had to pay money for something they couldn't experience in person. The solution wasn't to lower prices or increase ad spend — Airbnb hired professional photographers to reshoot every listing for their hosts. The result: booking conversion rates increased 200% for listings with professional photography. Core insight: when customers cannot 'try before they buy,' the quality of visual proof is the single most powerful conversion lever available.",
+    lesson: "Lesson for DRM Design: Investing in high-quality portfolio content — professional photography, real video tours, 3D-vs-finished-space comparisons — is not a cost. It is the highest-leverage conversion asset in any 'buy before you see' B2B service. A properly built Social Proof Arsenal can improve conversion rates more than doubling the advertising budget ever could."
+  },
+  kpis: [
+    { label: 'Lead Quality Rate',     abbr: 'LQR', description: 'Percentage of leads meeting qualification criteria (300M+ budget, defined timeline, F&B commercial project type) out of total leads — target increase from 40–50% to 60–70%. The core KPI reflecting targeting precision and Lead Magnet effectiveness.' },
+    { label: 'Conversion Rate',       abbr: 'CVR', description: 'Percentage of qualified leads converting to signed contracts — target increase from 10–15% to 15–20%. A 5% improvement equals +2–3 contracts/month ≈ +24–36M VND in revenue with zero additional ad spend.' },
+    { label: 'Monthly Organic Reach', abbr: 'MOR', description: 'Monthly organic reach via TikTok + local SEO + community seeding — target from 80–100K to 200K+. Ensures DRM Design maintains continuous presence throughout the entire 1–3 month client decision journey.' }
+  ],
+  playbook: [
+    { step: 1, title: 'Phase 1 — Lead Funnel Reconstruction (Weeks 1–2)',      description: "Audit all current ad data to identify highest-converting audience segments. Rebuild Facebook Ads targeting around behavioral signals: F&B page admins, interior design community followers, active commercial lease seekers. Create Lead Magnet: '7 Things to Know Before Designing Your Cafe' — simultaneously filters the right audience and demonstrates deep F&B expertise from the very first touchpoint. Build a Messenger qualifying script to confirm budget and timeline before committing sales resources." },
+    { step: 2, title: 'Phase 2 — Build the Social Proof Arsenal (Weeks 3–5)', description: 'Produce a systematic Social Proof content set: (1) 60–90 second testimonial videos from 3 clients with completed projects; (2) Before-after carousel + 3D-vs-reality comparisons for 5 flagship projects; (3) "5-Step Transparent Process" series neutralizing hidden-cost anxiety; (4) "Brand Story" content behind each completed commercial space — why each one is genuinely one-of-a-kind. Simultaneously establish a 72-hour lead nurture workflow: Inbox → initial consultation → send matched portfolio → schedule on-site meeting.' },
+    { step: 3, title: 'Phase 3 — Content Ecosystem Activation (Weeks 6–8)',    description: 'Activate three channels simultaneously: (1) TikTok 2 videos/week — "Behind the scenes: Hon Que Restaurant" + "How to save 20% on cafe design costs"; (2) Local SEO for keywords "thiet ke cafe da nang", "thi cong nha hang hoi an", "thiet ke quan cafe mien trung"; (3) Seed 3–5 relevant Facebook groups/week: Central Vietnam F&B owner communities, commercial lease hunter groups, Da Nang business groups. The Content Ecosystem guarantees DRM Design appears at the right moment at every touchpoint across the 1–3 month decision journey.' }
+  ],
+  conclusion: "This is not a 'more content' or 'stronger ads' problem — it is a problem of building a synchronized trust system from awareness to conversion. With a 1–3 month decision journey and a 300–800M VND investment at stake, DRM Design's clients don't buy on impulse — they buy after months of observing, comparing, and self-convincing across multiple touchpoints. Marketing's job is not to 'persuade immediately' — it is to 'appear at the right moment, in the right place, with enough credibility' throughout that entire journey. When the Trust-First System operates in sync — lead quality increases, conversion increases, revenue increases — without increasing the budget."
+};
+
 export const marketingCasesDataEn: MarketingCase[] = [
   {
     id: 'case-kfc',
@@ -1047,6 +1178,25 @@ export const marketingCasesDataEn: MarketingCase[] = [
     detailSlug: 'case-vinamilk',
     detail: vinamilkDetailEn,
     pdfUrl: '/vinamilk-case-study.pdf'
+  },
+  {
+    id: 'case-drm',
+    brand: 'DRM Design',
+    title: 'DRM Design — When B2B Conversion Is Not About Leads, But About Trust',
+    industry: 'Interior Design / F&B Commercial',
+    period: '2026 · Entry Test',
+    description: 'Strategic marketing analysis for a specialized F&B design firm in Central Vietnam: increasing quality leads from 40–50% to 60–70%, conversion from 10–15% to 15–20% on a 12–15M VND/month budget. A B2B conversion challenge where clients must invest 300–800M VND in a space that does not yet exist.',
+    points: [
+      { icon: 'challenge', content: '100–120 leads/month but only 40–50% qualify. 10–15% conversion rate in a high-ticket B2B service — clients take 1–3 months to decide, cannot "try before buying" a 300–800M VND commitment. Intense competition from cheap generic firms and large studios from major cities.' },
+      { icon: 'strategy',  content: "Deployed 'Trust-First Conversion System' — 3 synchronized layers: (1) Restructure Facebook Ads behavioral targeting + Lead Magnet to filter qualified prospects; (2) Build Social Proof Arsenal (before-after, testimonial videos, transparent process); (3) Content Ecosystem via TikTok + local SEO + F&B owner community seeding." },
+      { icon: 'result',    content: 'Targets: Quality leads increase to 60–70/month, conversion 15–20% (+2–3 contracts/month ≈ +24–36M VND revenue with no budget increase), organic reach 200K+/month. 72-hour lead nurture workflow shortens contract closing time.' },
+      { icon: 'insight',   content: "B2B clients don't buy 'beautiful designs' — they buy 'certainty their investment won't be wasted.' Marketing's job is not to 'persuade immediately' but to 'appear at the right moment, in the right place, with enough credibility' across the entire 1–3 month decision journey." }
+    ],
+    tags: ['B2B Marketing', 'Lead Quality Funnel', 'Social Proof', 'TOFU-MOFU-BOFU', 'Interior Design Strategy'],
+    coverGradient: 'from-amber-700 to-orange-600',
+    frameworks: ['Lead Quality Funnel', 'TOFU-MOFU-BOFU', 'Social Proof Arsenal', 'Customer Decision Journey'],
+    detailSlug: 'case-drm',
+    detail: drmDetailEn
   }
 ];
 
