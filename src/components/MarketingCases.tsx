@@ -16,6 +16,7 @@ import {
   ExternalLink,
   Clock,
   FileText,
+  FileSpreadsheet,
   Download,
   X
 } from 'lucide-react';
@@ -216,6 +217,18 @@ export default function MarketingCases({ lang }: MarketingCasesProps) {
                           <FileText className="w-3.5 h-3.5" />
                           {lang === 'vi' ? 'Bản PDF' : 'PDF'}
                         </button>
+                      )}
+
+                      {cas.reportUrl && (
+                        <a
+                          href={cas.reportUrl}
+                          download
+                          onClick={(e) => e.stopPropagation()}
+                          className="flex-none py-3 px-4 rounded-2xl border border-emerald-200 hover:border-emerald-300 bg-emerald-50/40 hover:bg-emerald-50 text-emerald-700 text-xs font-bold cursor-pointer transition-all duration-200 flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-[0.99] no-underline"
+                        >
+                          <FileSpreadsheet className="w-3.5 h-3.5" />
+                          {lang === 'vi' ? 'Báo cáo' : 'Report'}
+                        </a>
                       )}
                     </div>
 

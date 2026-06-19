@@ -959,7 +959,8 @@ export const marketingCasesDataVi: MarketingCase[] = [
     coverGradient: 'from-amber-700 to-orange-600',
     frameworks: ['Lead Quality Funnel', 'TOFU-MOFU-BOFU', 'Social Proof Arsenal', 'Customer Decision Journey'],
     detailSlug: 'case-drm',
-    detail: drmDetailVi
+    detail: drmDetailVi,
+    reportUrl: '/drm-content-plan.xlsx'
   }
 ];
 
@@ -1196,7 +1197,8 @@ export const marketingCasesDataEn: MarketingCase[] = [
     coverGradient: 'from-amber-700 to-orange-600',
     frameworks: ['Lead Quality Funnel', 'TOFU-MOFU-BOFU', 'Social Proof Arsenal', 'Customer Decision Journey'],
     detailSlug: 'case-drm',
-    detail: drmDetailEn
+    detail: drmDetailEn,
+    reportUrl: '/drm-content-plan.xlsx'
   }
 ];
 

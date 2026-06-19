@@ -135,5 +135,6 @@ export interface MarketingCase {
   frameworks: string[];
   detailSlug?: string;
   detail?: MarketingCaseDetailData;
-  pdfUrl?: string;   // optional PDF download/preview
+  pdfUrl?: string;      // optional PDF download/preview
+  reportUrl?: string;   // optional Excel/report direct download
 }
